@@ -1,0 +1,9 @@
+.contact-form-container {
+    @include rtl() {
+        .input-selection-container {
+		    &:first-child {
+			    margin-top: 0;
+		    }
+        }
+    }
+}

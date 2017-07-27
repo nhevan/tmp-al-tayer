@@ -1,0 +1,39 @@
+﻿{
+    "items": [
+        {
+            "img-src": "/assets/img/brand-ford.jpg",
+            "img-blur": "/assets/img/brand-ford_blur.png",
+            "name":  "Ford"
+        },
+        {
+            "img-src": "/assets/img/brand-ford-trucks.jpg",
+            "img-blur": "/assets/img/brand-ford-trucks_blur.png",
+            "name": "Ford Trucks"
+        },
+        {
+            "img-src": "/assets/img/brand-lincoln.jpg",
+            "img-blur": "/assets/img/brand-lincoln_blur.png",
+            "name":  "Lincoln"
+        },
+        {
+            "img-src": "/assets/img/brand-jaguar.jpg",
+            "img-blur": "/assets/img/brand-jaguar_blur.png",
+            "name": "Jaguar"
+        },
+        {
+            "img-src": "/assets/img/brand-landrover.jpg",
+            "img-blur": "/assets/img/brand-landrover_blur.png",
+            "name": "Land Rover"
+        },
+        {
+            "img-src": "/assets/img/brand-majesty.jpg",
+            "img-blur": "/assets/img/brand-majesty_blur.png",
+            "name": "Maserati"
+        },
+        {
+            "img-src": "/assets/img/brand-ferrari.jpg",
+            "img-blur": "/assets/img/brand-ferrari_blur.png",
+            "name": "Ferrari"
+        }
+    ]
+}

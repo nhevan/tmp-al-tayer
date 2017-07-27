@@ -1,0 +1,82 @@
+@import "_brand-preowned_ar";
+
+.brand-model-filter {
+    &.brand-preowned-filter {
+        //background-color: #efefef;
+        //border: none;
+
+        .row {
+            @include respond-to-min($tabletSize) {
+                margin-left: rem(-25px);
+                margin-right: rem(-25px);
+            }
+
+            @include respond-to-min($desktopSize) {
+                margin-left: rem(-30px);
+                margin-right: rem(-30px);
+            }
+        }
+
+        .col-sm-6 {
+            @include respond-to-min($tabletSize) {
+                padding-left: rem(25px);
+                padding-right: rem(25px);
+            }
+
+            @include respond-to-min($desktopSize) {
+                padding-left: rem(30px);
+                padding-right: rem(30px);
+            }
+        }
+
+        .brand-model-filter__dropdown {
+            background: #fff;
+        }
+    }
+}
+
+.preowned-model-container {
+    background-color: #efefef;
+    padding-top: rem(50px);
+    .row.double-row-gutter {
+        @include respond-to-min($tabletSize) {
+            margin-left: rem(-10px);
+            margin-right: rem(-10px);
+        }
+
+        @include respond-to-min($desktopSize) {
+            margin-left: rem(-25px);
+            margin-right: rem(-25px);
+        }
+    }
+
+    .preowned-description-container {
+        color: $grayText;
+        font-size: rem(14px);
+        line-height: rem(20px);
+        padding: rem(0 0 14px);
+        margin: 0;
+        @include latoNormal();
+
+        .preowned-description-line {
+            width: 100%;
+            overflow: hidden;
+            display: block;
+            letter-spacing: rem(0.5px);
+
+            &__label {
+                display: inline-block;
+                width: 50%;
+                float: left;
+                text-align: left;
+            }
+
+            &__value {
+                display: inline-block;
+                width: 50%;
+                float: right;
+                text-align: right;
+            }
+        }
+    }
+}

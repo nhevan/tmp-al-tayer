@@ -1,0 +1,183 @@
+@import "_vehicle-detail-feature_ar"; 
+
+.vehicle-feature-container {
+    background-color: #fff;
+    border-bottom: rem(1px solid #e7e7eb);
+
+    @include respond-to-min($desktopSize) {
+        border-bottom: none;
+    }
+}
+
+.feature-item__column {
+    border-right: rem(1px solid #e7e7eb);
+    border-bottom: rem(1px solid #e7e7eb);
+    padding: 0;
+    font-size: 0px;
+
+    &:nth-child(2n) {
+        border-right: none;
+    }
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    &:nth-last-child(2):nth-child(odd) {
+        border-bottom: none;
+    }
+
+    @include respond-to-min($tabletSize) {
+        &:nth-child(2n) {
+            border-right: rem(1px solid #e7e7eb);
+        }
+
+        &:nth-child(3n) {
+            border-right: none;
+        }
+
+        &:nth-last-child(2):nth-child(odd) {
+            border-bottom: rem(1px solid #e7e7eb);
+        }
+
+        &:nth-last-child(2):nth-child(3n+1) {
+            border-bottom: none;
+        }
+
+        &:nth-last-child(2):nth-child(3n+2) {
+            border-bottom: none;
+        }
+
+        &:nth-last-child(3):nth-child(3n+1) {
+            border-bottom: none;
+        }
+    }
+
+    @include respond-to-min($desktopSize) {
+        border-bottom: none;
+
+        &:nth-child(3n) {
+            border-right: rem(1px solid #e7e7eb);
+        }
+
+        &:last-child {
+            border-right: none;
+        }
+    }
+}
+
+.feature-item__container {
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 0px;
+    vertical-align: middle;
+    height: rem(60px);
+    @include verticle-middle();
+    padding-left: rem(20px);
+
+    @include respond-to-min($tabletSize) {
+        padding-right: rem(15px);
+        padding-left: rem(15px);
+    }
+
+    @include respond-to-min($desktopSize) {
+        @include horizontal-center(relative);
+        height: rem(70px);
+        padding-left: rem(15px);
+        padding-right: rem(15px);
+        width: auto;
+    }
+
+    img {
+        display: inline-block;
+        margin: rem(0 8px 0 0);
+        vertical-align: middle;
+        max-width: 27px;
+
+        @include respond-to-min($tabletSize) {
+            max-width: none;
+        }
+
+        @include respond-to-min($desktopSize) {
+        }
+    }
+
+    .feature-item__text-container {
+        display: inline-block;
+        vertical-align: middle;
+
+        &:nth-child(2) {
+            max-width: 60%;
+        }
+
+        @include respond-to-min($tabletSize) {
+            &:nth-child(2) {
+                max-width: 70%;
+            }
+        }
+
+        @include respond-to-min($desktopSize) {
+            &:nth-child(2) {
+                max-width: 65%;
+            }
+        }
+        @include respond-to-min($laptopSize) {
+            &:nth-child(2) {
+                max-width: 75%;
+            }
+        }
+        @include respond-to-min($hdSize) {
+            &:nth-child(2) {
+                max-width: 80%;
+            }
+        }
+    }
+
+    .feature-item__normal-text {
+        display: block;
+        color: $grayText;
+        @include latoBold();
+        font-size: rem(9px);
+        line-height: rem(10px);
+
+        @include respond-to-min($tabletSize) {
+            font-size: rem(14px);
+            line-height: rem(16px);
+        }
+
+        @include respond-to-min($desktopSize) {
+            font-size: rem(12px);
+            line-height: rem(14px);
+        }
+
+        @include respond-to-min($laptopSize) {
+            font-size: rem(14px);
+            line-height: rem(16px);
+        }
+    }
+
+    .feature-item__bold-text {
+        display: block;
+        color: $orangeBorder;
+        @include latoBold();
+        font-size: rem(15px);
+        line-height: rem(18px);
+        letter-spacing: rem(1px);
+
+        @include respond-to-min($tabletSize) {
+            font-size: rem(20px);
+            line-height: rem(24px);
+        }
+
+        @include respond-to-min($desktopSize) {
+            font-size: rem(16px);
+            line-height: rem(20px);
+        }
+
+        @include respond-to-min($laptopSize) {
+            font-size: rem(20px);
+            line-height: rem(24px);
+        }
+    }
+}

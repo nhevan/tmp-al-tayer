@@ -1,0 +1,245 @@
+.brand-maserati-container {
+    .brand-content-row {
+        &:first-child {
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+        }
+        .thumbnail {
+            img {
+                opacity: 0.3;
+            }
+        }
+
+        .thumbnail.active {
+            img {
+                opacity: 1;
+            }
+        }
+
+        .label {
+            p {
+                text-align: center;
+                color: #FD5204;
+                font-size: 1.4rem;
+            }
+        }
+
+        .no-right-padding {
+            padding-right: 0;
+        }
+
+        .btn-group {
+            display: flex;
+            align-items: flex-start;
+            .btn {
+                width: 11.5%;
+                margin: 5px;
+                background-color: #FD5204;
+                padding: 1rem;
+                color: white;
+                font-size: 13px;
+                text-align: center;
+                border-radius: 4px;
+                box-shadow: 0 0 5px #454545;
+                display: flex;
+                align-items: center;
+                min-height: 5rem;
+                cursor: pointer;
+                //visibility: hidden;
+                &:first-child {
+                    //visibility: visible;
+                }
+                &:focus {
+                    //background-color: #454545;
+                }
+            }
+
+            a.btn {
+                label.btn {
+                    margin: 0;
+                    padding: 0;
+                    min-height: initial;
+                    visibility: visible;
+                    box-shadow: none;
+                }
+            }
+        }
+
+    }
+    .second, .third {
+        display: none;
+    }
+
+    .brand-tabs-contents.tab-contents {
+        background-color: #0A1626;
+        .text-contents-row {
+            p {
+                font-family: FrutigerNeueLTPro-Light;
+                font-weight: normal;
+                font-style: normal;
+            }
+        }
+    }
+
+    .brand-model {
+        .brand-model__item {
+            &__text-container {
+                h3 {
+                    font-family: FrutigerNeueLTPro-Regular;
+                    font-weight: normal;
+                    font-style: normal;
+                }
+
+                p {
+                    font-family: FrutigerNeueLTPro-Light;
+                    font-weight: normal;
+                    font-style: normal;
+                }
+            }
+
+            &__price {
+                span {
+                    font-family: FrutigerNeueLTPro-Light;
+                    font-weight: normal;
+                    font-style: normal;
+
+                    &.price {
+                        font-family: FrutigerNeueLTPro-Regular;
+                        font-weight: normal;
+                        font-style: normal;
+                    }
+                }
+            }
+        }
+    }
+
+    .brand-tab__container_model_brochure {
+        .brand-model__item {
+            .brand-model__item__text-container {
+                h3, a.download-brochure {
+                    font-family: FrutigerNeueLTPro-Regular;
+                    font-weight: normal;
+                    font-style: normal;
+                }
+            }
+        }
+    }
+
+    /*styles for modal*/
+
+    // Btn
+    .btn-close {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #eee;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        display: flex;
+        align-items: center;
+        img {
+            max-width: 15px;
+            margin: 0 auto;
+        }
+        &:hover{
+            color: gray;
+        }
+    }
+
+
+    // Modal
+    .modal {
+        // This is modal bg
+        &:before{
+            content: "";
+            display: none;
+            background: rgba(0,0,0,.6);
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            z-index: 10;
+        }
+
+        &:target{
+            // Active animate in modal
+            &:before{
+                display: block;
+            }
+            .modal-dialog{
+                transform: translate(0, 0);
+                top: 50%;
+            }
+        }
+    }
+
+    // Modal Dialog
+    .modal-dialog {
+        background: #fefefe;
+        border-radius: 5px;
+        position: fixed;
+        left: 50%;
+        top: -200%;
+        z-index: 11;
+        width: 70%;
+        transform: translate(-50%, -50%) !important;
+        transition: 0.3s ease-out;
+    }
+
+    .modal-body{
+        padding: 20px;
+        max-height: 76vh;
+        overflow-y: auto;
+        margin-bottom: 10px;
+        .page {
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            .col-half{
+                width: 50%;
+                padding: 5px 15px;
+                img {
+                    max-width: 100%;
+                    display: block;
+                    margin: 35px auto 5px;
+                }
+                span {
+                    text-align: center;
+                    display: block;
+                    font-size: 13px;
+                }
+                p, ul, li {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    .modal-header,
+    .modal-footer{
+        padding: 5px 20px;
+    }
+
+    .modal-header{
+        h2{
+            display: inline-block;
+            position: relative;
+            /*&:after {
+                content: '';
+                background-color: #FD5204;
+                position: absolute;
+                width: 40vw;
+                height: 1px;
+                top: 50%;
+                left: 110%;
+            }*/
+        }
+    }
+
+    .modal-footer{
+        border-top: #eeeeee solid 1px;
+        text-align: right;
+    }
+
+}

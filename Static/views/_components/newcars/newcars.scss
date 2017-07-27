@@ -1,0 +1,145 @@
+@import "_newcars_ar";
+
+.newcars-container {
+    background: #efefef;
+    padding-bottom: rem(10px);
+
+    @include respond-to-min($tabletSize) {
+        padding-top: rem(45px);
+        padding-bottom: rem(0px);
+    }
+
+    @include respond-to-min($laptopSize) {
+        padding-top: rem(50px);
+        padding-bottom: rem(25px);
+    }
+
+    .newcars-contents {
+        margin-bottom: rem(30px);
+
+        p {
+            @extend .text-paragraph;
+            font-size: rem(12px);
+            line-height: rem(18px);
+            @include respond-to-min($tabletSize) {
+                font-size: rem(14px);
+                line-height: rem(20px);
+            }
+        }
+    }
+
+    .row.double-row-gutter {
+        @include respond-to-min($tabletSize) {
+            margin-left: rem(-10px);
+            margin-right: rem(-10px);
+        }
+
+        @include respond-to-min($laptopSize) {
+            margin-left: rem(-15px);
+            margin-right: rem(-15px);
+        }
+    }
+
+    .col-xs-12.double-column-gutter {
+        @include respond-to-min($tabletSize) {
+            padding-left: rem(10px);
+            padding-right: rem(10px);
+        }
+
+        @include respond-to-min($laptopSize) {
+            padding-left: rem(15px);
+            padding-right: rem(15px);
+        }
+    }
+
+    .newcar-item {
+        margin-bottom: rem(20px);
+
+        @include respond-to-min($tabletSize) {
+            &:nth-child(2n+3) {
+                clear: left;
+            }
+            margin-bottom: rem(40px);
+        }
+
+        @include respond-to-min($laptopSize) {
+            &:nth-child(2n+3) {
+                clear: none;
+            }
+
+            &:nth-child(4n+5) {
+                clear: left;
+            }
+
+            margin-bottom: rem(30px);
+        }
+
+        &:hover {
+            .newcar-thumbnail a::after {
+                opacity: 0.5;
+            }
+        }
+
+        .newcar-thumbnail {
+            width: 100%;
+
+            a {
+                display: block;
+                width: 100%;
+                text-decoration: none;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 1;
+                    background-color: #fff;
+                    opacity: 0;
+                    transition: all 0.25s;
+                }
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+                position: relative;
+                z-index: 0;
+            }
+        }
+
+        .carname {
+            text-align: center;
+            letter-spacing: rem(0.5px);
+            margin: 0;
+
+            a {
+                text-transform: uppercase;
+                display: block;
+                color: $blueTextColor;
+                @include latoBold();
+                text-decoration: none;
+                font-size: rem(18px);
+                line-height: rem(13px);
+
+                @include respond-to-min($tabletSize) {
+                    font-size: rem(20px);
+                    line-height: rem(15px);
+                }
+
+                padding-top: rem(14px);
+
+                @include respond-to-min($tabletSize) {
+                    padding-top: rem(20px);
+                }
+
+                @include respond-to-min($laptopSize) {
+                    padding-top: rem(15px);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+---
+title: "Brand Navigation"
+---
+<div class="brand-tabs__container hidden-xs">
+    <ul class="brand-tabs" data-require="base/tabs-select-ajax" data-container="brand_content_container">
+        <li class="tab-item-7"><img src="{{this.logo}}" alt="" /></li>
+        {{#each this.items}}
+        <li class="tab-item-7"><a href="{{url}}" class="{{classes}}" data-model="{{isModel}}"><span>{{text}}</span></a></li>
+        {{/each}}
+    </ul>
+</div>
+<div class="brand-tabs__container cd-tabs hidden-sm hidden-md hidden-lg" data-require="base/tabs-mobile">
+    <span class="brand-logo"><img src="{{this.logo}}" alt="" /></span>
+    <nav>
+        <ul class="brand-tabs cd-tabs-navigation" data-require="base/tabs-select-ajax" data-container="brand_content_container">
+            {{#each this.items}}
+            <li><a href="{{url}}" class="{{classes}}" data-model="{{isModel}}">{{text}}</a></li>
+            {{/each}}
+        </ul> <!-- cd-tabs-navigation -->
+    </nav>
+</div>

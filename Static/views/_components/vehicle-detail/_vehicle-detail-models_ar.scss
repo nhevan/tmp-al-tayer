@@ -1,0 +1,32 @@
+
+.vehicle-detail-models-container {
+    @include rtl() {
+        .col-sm-6 {
+            @include respond-to-min($tabletSize) {
+                &:nth-child(2n+1) {
+                    clear: right;
+                }
+            }
+
+            @include respond-to-min($desktopSize) {
+                &:nth-child(2n+1) {
+                    clear: none;
+                }
+
+                &:nth-child(3n+1) {
+                    clear: right;
+                }
+            }
+        }
+
+        .vehicle-model-short-description {
+            .model-specifications {
+                li {
+                    padding-right: rem(10px);
+                    padding-left: 0;
+                    background: url('/assets/img/verhicle-model-list-type.jpg') no-repeat right 10px;
+                }
+            }
+        }
+    }
+}

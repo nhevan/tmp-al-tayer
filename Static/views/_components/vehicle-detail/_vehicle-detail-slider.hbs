@@ -1,0 +1,15 @@
+
+<div class="container-fluid double-container-gutter vehicle-slider-container owl-theme" data-require="base/views/carousel-slider-view">
+    <div>
+        {{#each vehicle-detail.slider}}
+        <div class="slider-image-fullscreen__container">
+            <picture>
+                <source media="(min-width: 75rem)" srcset="{{largeImage}}">
+                <source media="(min-width: 62rem)" srcset="{{desktopImage}}">
+                <source media="(min-width: 48rem)" srcset="{{tabletImage}}">
+                <img src="{{mobileImage}}" alt="" />
+            </picture>
+        </div>
+        {{/each}}
+    </div>
+</div>

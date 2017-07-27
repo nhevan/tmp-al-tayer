@@ -1,0 +1,115 @@
+@import "_vehicle-detail-slider_ar";
+
+.vehicle-slider-container {
+    background-color: #efefef;
+    padding-top: rem(20px);
+    padding-bottom: rem(20px);
+
+    @include respond-to-max($tabletSize) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    @include respond-to-min($tabletSize) {
+        padding-top: rem(40px);
+        padding-bottom: rem(40px);
+    }
+
+
+    .owl-nav {
+        margin: 0;
+
+        .owl-prev {
+            position: absolute;
+            text-indent: rem(-10000px);
+            font-size: 0;
+            margin: 0;
+            padding: 0;
+            height: rem(49px);
+            background: url('/assets/img/slider-arrow-left.png') no-repeat center center;
+            @include vertical-align(absolute);
+            background-size: 8px auto;
+            left: rem(10px);
+            width: rem(8px);
+
+            @include respond-to-min($tabletSize) {
+                background-size: 17px auto;
+                left: rem(23px);
+                width: rem(17px);
+            }
+
+            @include respond-to-min($desktopSize) {
+                background-size: 100% auto;
+                left: rem(40px);
+                width: rem(32px);
+            }
+
+            &:hover {
+                background: url('/assets/img/slider-arrow-left.png') no-repeat center center;
+                background-size: 8px auto;
+
+                @include respond-to-min($tabletSize) {
+                    background-size: 17px auto;
+                }
+
+                @include respond-to-min($desktopSize) {
+                    background-size: 100% auto;
+                }
+            }
+        }
+
+        .owl-next {
+            position: absolute;
+            text-indent: rem(10000px);
+            font-size: 0;
+            margin: 0;
+            padding: 0;
+            height: rem(49px);
+            background: url('/assets/img/slider-arrow-right.png') no-repeat center center;
+            @include vertical-align(absolute);
+            background-size: 8px auto;
+            right: rem(10px);
+            width: rem(8px);
+
+            @include respond-to-min($tabletSize) {
+                background-size: 17px auto;
+                width: rem(17px);
+                right: rem(23px);
+            }
+
+            @include respond-to-min($desktopSize) {
+                background-size: 100% auto;
+                right: rem(40px);
+                width: rem(32px);
+            }
+
+            &:hover {
+                background: url('/assets/img/slider-arrow-right.png') no-repeat center center;
+                background-size: 8px auto;
+
+                @include respond-to-min($tabletSize) {
+                    background-size: 17px auto;
+                }
+
+                @include respond-to-min($desktopSize) {
+                    background-size: 100% auto;
+                }
+            }
+        }
+    }
+}
+
+.slider-image-fullscreen__container {
+    position: relative;
+    width: 100%;
+
+    &:nth-child(n+2) {
+        display: none;
+    }
+
+    img {
+        width: 100%;
+        display: block;
+        position: relative;
+    }
+}

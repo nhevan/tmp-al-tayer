@@ -1,0 +1,46 @@
+.book-page-top {
+    @extend .no-slider-padding;
+    padding-bottom: rem(30px);
+    background-color: #efefef;
+    border-bottom: rem(1px solid #d2d2d2);
+
+    h1 {
+        @extend .big-heading-group;
+        line-height: rem(50px);
+        margin-bottom: 0;
+        text-transform: none;
+    }
+
+    p {
+        @extend .text-paragraph;
+    }
+}
+
+.book-page-form {
+    padding-top: rem(20px);
+    padding-bottom: rem(50px);
+    background-color: #fff;
+
+    .col-sm-6 {
+        margin-bottom: rem(20px);
+    }
+
+    .checkbox-container{
+        margin-bottom: rem(40px);
+
+        .checkbox-label{
+            max-width: rem(250px);
+            @include respond-to-min($mobileSize){
+                max-width: rem(440px);
+            }
+
+            @include respond-to-min($tabletSize) {
+                max-width: rem(750px);
+            }
+
+            @include respond-to-min($desktopSize) {
+                max-width: rem(800px);
+            }
+        }
+    }
+}

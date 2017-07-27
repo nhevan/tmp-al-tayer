@@ -1,0 +1,23 @@
+---
+title: "Brand Models Tab Contents Brochure"
+---
+<div class="brand-container">
+    {{> brand-tabs brand-ford-tabs }}
+    <div id="brand_content_container ">
+        <div>
+            <div class="brand-tabs-contents brand-tab__container_model_brochure">
+                <div class="container-fluid tab-contents">
+                    <div class="row brand-model">
+                        {{#each brand-model-brochure.items}}
+                        {{> _brand-model-brochure-item this}}
+                        {{/each}}
+                    </div>
+                    <div class="row paginations-container">
+                        <div class="col-xs-12">
+                            {{> paginations}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

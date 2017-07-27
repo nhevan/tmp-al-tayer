@@ -1,0 +1,12 @@
+---
+title: "Vehicle detail warranty block"
+---
+<div class="container-fluid double-container-gutter vehicle-detail-warranty-container">
+    <div class="row double-row-gutter">
+        {{#each vehicle-detail-warranty-block.items}}
+        <div class="col-xs-12 col-sm-6 col-md-4 double-column-gutter">
+            {{> _vehicle-detail-warranty-block this}}
+        </div>
+        {{/each}}
+    </div>
+</div>

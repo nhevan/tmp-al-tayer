@@ -1,0 +1,37 @@
+.privacy-container {
+    background: #efefef;
+    &.container-fluid.double-container-gutter {
+        padding-top: rem(40px);
+        padding-bottom: rem(40px);
+    }
+    
+    .privacy-contents {
+        .big-heading-group {
+            text-transform: none;
+        }
+        h3 {
+            margin: 0 0 15px;
+            @include arial();
+            font-weight: 700;
+            font-size: rem(20px);
+            color: $blueTextColor;
+        }
+        p {
+            @include arial();
+            font-size: rem(16px);
+            line-height: rem(26px);
+            margin: 0 0 40px;
+            color: $grayText;
+        }
+        a {
+            @include arial();
+            font-size: rem(16px);
+            font-weight: 700;
+            color: $blueTextColor;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

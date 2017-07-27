@@ -1,0 +1,29 @@
+
+<div class="container-fluid double-container-gutter preowned-detail-container" data-require="base/tabs-select">
+    <h2 class="big-heading-group">{{preowned_detail.header}}</h2>
+    <div class="row preowned-tab-row">
+        {{#each preowned_detail.tab}}
+        <div class="col-xs-6 tab-column">
+            {{#if this.isActive}}
+            <a href="#" class="preowned-tab-item active" data-target="{{this.data}}">
+                <span>{{this.text}}</span>
+            </a>
+            {{else}}
+            <a href="#" class="tab-item" data-target="{{this.data}}">
+                <span>{{this.text}}</span>
+            </a>
+            {{/if}}
+        </div>
+        {{/each}}
+    </div>
+
+    {{#each preowned_detail.list}}
+    <div class="preowned-detail-list-container {{#if this.isActive}}active{{/if}}" data-content="{{this.data}}">
+        <div class="row double-row-gutter">
+            <div class="col-xs-12 double-column-gutter">
+                <p>{{this.description}}</p>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>

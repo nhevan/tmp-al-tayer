@@ -1,0 +1,44 @@
+---
+title: "Contact Form"
+---
+
+<div class="container-fluid double-container-gutter contact-form-container" data-require="base/views/contact_form">
+    <form>
+        <div class="row double-row-gutter">
+            <div class="col-xs-12 double-column-gutter">
+                <h3 class="header-form-group">
+                    <img src="/assets/img/icon_mailto.png" alt="" />
+                    Send an enquiry
+                </h3>
+            </div>
+
+            <div class="col-xs-12 col-md-6 double-column-gutter">
+                {{> input-text-item finance_insurance.first_name}}
+
+                {{> input-text-item finance_insurance.last_name}}
+
+                <div class="group-two-input">
+                    {{> select-item finance_insurance.select_phone}}
+                    {{> input-text-item finance_insurance.phone_input}}
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 double-column-gutter">
+                {{> select-item contact-us.enquiry_type}}
+                {{> textarea-item contact-us.message}}
+                {{> select-item contact-us.new_vehicle}}
+                {{> select-item contact-us.list_brand}}
+                {{> input-text-item contact-us.additional_message}}
+            </div>
+
+            <div class="col-xs-12 double-column-gutter">
+                <h3 class="header-form-group">
+                    <img src="/assets/img/icon_verification.png" alt="" />
+                    Verification Code
+                </h3>
+                <div class="g-recaptcha" data-sitekey="6LfKMhATAAAAABnDguv8544m_H8P1e-mhs8zGxde"></div>
+
+                <button class="button-common" type="Submit">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>

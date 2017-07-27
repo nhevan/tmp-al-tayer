@@ -1,0 +1,67 @@
+---
+title: "Brand Models Tab Contents"
+---
+<div class="brand-container brand-ford-container brand-tab__container_model">
+    {{> brand-tabs brand-ford-tabs }}
+
+    <div id="brand_content_container">
+        <div>
+            <div class="container-fluid tab-contents brand-model-filter" data-require="base/views/model_ajax_search">
+                <div class="row">
+                    <div class="col-xs-12 col-md-12 col-lg-12">
+                        <form>
+                            <div class="brand-model-filter__dropdown-container">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <div class="brand-model-filter__dropdown">
+                                            <select>
+                                                <option value="0" selected>Showing All Categories</option>
+                                                <option value="cat1">Category 1</option>
+                                                <option value="cat2">Category 2</option>
+                                                <option value="cat3">Category 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <div class="brand-model-filter__dropdown">
+                                            <select>
+                                                <option value="0" selected>Show All Prices</option>
+                                                <option value="price1">Price 1</option>
+                                                <option value="price2">Price 2</option>
+                                                <option value="price3">Price 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit">Filter</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="brand-tabs-contents">
+                <div class="container-fluid tab-contents">
+                    <div class="row text-contents-row">
+                        <div class="col-xs-12">
+                            <p>This is brand overview description text lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse ut purus. Suspendisse tristique. Cras et sem at odio porttitor mattis. Donec dignissim ornare tortor. Donec lectus turpis, tempor id, cursus vitae, eleifend in, risus. Aenean turpis. Mauris ultricies quam malesuada ligula. </p>
+                            <p><span>&nbsp;</span></p>
+                        </div>
+                    </div>
+                    <div class="row brand-model">
+                        {{#each brand-model.items}}
+                        {{> _brand-model-item this}}
+                        {{/each}}
+
+                        {{> _brand-model-pre-owned-not-found}}
+                    </div>
+                    <div class="row paginations-container">
+                        <div class="col-xs-12">
+                            {{> paginations}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,55 @@
+
+.infowindow {
+    @include rtl() {
+        &__marker {
+            left: auto;
+            right: 0px;
+            transform: translateX(50%);
+        }
+
+        &__content {
+            &__watch {
+                padding-right: rem(20px);
+                padding-left: 0;
+                background: url('/assets/img/infowindow_watch.png') no-repeat right 0;
+                background-size: rem(auto 12px);
+
+                @include respond-to-min($tabletSize) {
+                    background-size: rem(auto 24px);
+                    padding-right: rem(43px);
+                }
+            }
+
+            &__phone {
+                padding-right: rem(20px);
+                padding-left: 0;
+                background: url('/assets/img/infowindow_phone.png') no-repeat right center;
+                background-size: rem(auto 10px);
+
+                @include respond-to-min($tabletSize) {
+                    background-size: rem(auto 20px);
+                    padding-right: rem(43px);
+                }
+            }
+
+            &__direction {
+                display: none;
+            }
+            &__direction-af {
+                display: block;
+            }
+        }
+
+        &__close {
+            left: rem(0px);
+            right: auto;
+        }
+    }
+}
+
+.gm-style-iw {
+    @include rtl() {
+        right: 0px !important;
+        left: auto !important;
+    }
+}

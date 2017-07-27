@@ -1,0 +1,32 @@
+.brand-lincoln-container {
+    .overview-content-block {
+        .thumbnail {
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            @include latoBold();
+            font-size: rem(20px);
+            line-height: 1;
+            text-transform: capitalize;
+            display: block;
+            margin: rem(0 0 10px);
+            text-align: center;
+            color: #262626;
+            letter-spacing: rem(1px);
+
+            @include respond-to-min($tabletSize) {
+                font-size: rem(18px);
+            }
+
+            @include respond-to-min($largeSize) {
+                font-size: rem(20px);
+            }
+
+            &:nth-child(2) {
+                font-size: rem(14px);
+                color: #bb5c00;
+            }
+        }
+    }
+}

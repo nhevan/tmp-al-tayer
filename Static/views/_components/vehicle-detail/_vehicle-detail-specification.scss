@@ -1,0 +1,182 @@
+@import "_vehicle-detail-specification_ar";
+
+.vehicle-specification-container {
+    background-color: #efefef;
+    font-size: 0;
+    margin: rem(0);
+    border-bottom: rem(2px solid #d8d8d8);
+
+    h2 {
+        @extend .big-heading-group;
+    }
+
+    .vehicle-tab-container {
+        @extend .tab-row;
+
+        @include respond-to-max($tabletSize) {
+            margin-left: rem(-20px);
+            margin-right: rem(-20px);
+            display: none;
+
+            &.vehicle-tab-container-mobile {
+                display: block;
+            }
+        }
+
+        @include respond-to-min($tabletSize) {
+            &.vehicle-tab-container-mobile {
+                display: none;
+            }
+        }
+
+        &.vehicle-tab-container-mobile {
+            overflow: hidden;
+            height: rem(60px);
+
+            nav {
+                overflow: scroll;
+                overflow-y: visible;
+                height: rem(80px);
+                -webkit-overflow-scrolling: touch;
+            }
+
+            ul {
+                display: block;
+                padding: 0;
+                margin: 0;
+                list-style: none;
+            }
+
+            li {
+                display: inline-block;
+                @extend .tab-column;
+            }
+        }
+
+        .vehicle-tab-column {
+            @extend .tab-column;
+
+            @include respond-to-max($tabletSize) {
+                display: inline-block;
+                float: none;
+                width: auto;
+            }
+        }
+
+        .vehicle-specification-tab-item {
+            @extend .tab-item;
+        }
+    }
+
+    .vehicle-specification-list-container {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+
+        .row.double-row-gutter {
+            @include respond-to-min($tabletSize) {
+                margin-left: rem(-10px);
+                margin-right: rem(-10px);
+            }
+
+            @include respond-to-min($desktopSize) {
+                margin-left: rem(-30px);
+                margin-right: rem(-30px);
+            }
+        }
+
+        .col-sm-6 {
+            padding-left: rem(20px);
+            padding-right: rem(20px);
+
+            @include respond-to-min($tabletSize) {
+                padding-left: rem(10px);
+                padding-right: rem(10px);
+
+                &:nth-child(2n+1) {
+                    clear: left;
+                }
+            }
+
+            @include respond-to-min($desktopSize) {
+                padding-left: rem(30px);
+                padding-right: rem(30px);
+            }
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            margin: rem(0 0 10px);
+
+            @include respond-to-min($tabletSize) {
+            }
+
+            @include respond-to-min($desktopSize) {
+                margin: rem(0 0 14px);
+            }
+        }
+
+        h4 {
+            color: $blueTextColor;
+            @include latoBold();
+            margin: 0;
+            padding: 0;
+            text-transform: uppercase;
+            font-size: rem(15px);
+            line-height: rem(20px);
+
+            @include respond-to-min($tabletSize) {
+                font-size: rem(20px);
+                line-height: rem(28px);
+            }
+        }
+
+        .short-description {
+            @include respond-to-min($tabletSize) {
+                display: none;
+            }
+        }
+
+        .long-description {
+            display: none;
+            margin-bottom: rem(25px);
+
+            @include respond-to-min($tabletSize) {
+                display: block;
+                margin: rem(0 0 35px);
+            }
+        }
+
+        p {
+            padding: 0;
+            color: $grayText;
+            @include latoLight();
+            margin: rem(0);
+            font-size: rem(12px);
+            line-height: rem(19px);
+
+            @include respond-to-min($tabletSize) {
+                font-size: rem(14px);
+                line-height: rem(20px);
+            }
+        }
+
+        .vehicle-detail__show-more {
+            @include latoBold();
+            display: block;
+            font-size: rem(12px);
+            line-height: rem(17px);
+            color: $blueTextColor;
+            margin-bottom: rem(25px);
+            text-transform: uppercase;
+            cursor: pointer;
+
+            @include respond-to-min($tabletSize) {
+                display: none;
+            }
+        }
+    }
+}

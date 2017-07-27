@@ -1,0 +1,80 @@
+---
+title: "Brand Ford Overview Tab Contents"
+---
+<div class="brand-container brand-ford-container">
+    {{> brand-tabs brand-ford-tabs }}
+
+    <div id="brand_content_container">
+        <div>
+            <div class="container-fluid tab-contents brand-model-filter brand-preowned-filter" data-require="base/views/preowned_ajax_search">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="brand-model-filter__dropdown">
+                            <select>
+                                <option selected>Showing All Categories</option>
+                                <option>Category 1</option>
+                                <option>Category 2</option>
+                                <option>Category 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <div class="brand-model-filter__dropdown">
+                            <select>
+                                <option selected>Show All Prices</option>
+                                <option>Price 1</option>
+                                <option>Price 2</option>
+                                <option>Price 3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid double-container-gutter preowned-model-container">
+                <div class="row double-row-gutter">
+                    {{#each brand-preowned.items}}
+                    <div class="col-xs-12 col-sm-6 col-md-4 brand-model__item">
+                        <a href="#" title="">
+                            <div class="brand-model__item__image-container orange-top-border">
+                                <img class="brand-model__item__image-container__image" src="{{this.image}}" alt="" />
+                                <div class="brand-model__item__image-container__mask">&nbsp;</div>
+                            </div>
+                            <div class="brand-model__item__text-container">
+                                <h3>{{this.name}}</h3>
+                                <div class="preowned-description-container">
+                                    <div class="preowned-description-line">
+                                        <span class="preowned-description-line__label">Mileage</span>
+                                        <span class="preowned-description-line__value">{{this.mileage}}</span>
+                                    </div>
+                                    <div class="preowned-description-line">
+                                        <span class="preowned-description-line__label">Model Year</span>
+                                        <span class="preowned-description-line__value">{{this.model_year}}</span>
+                                    </div>
+                                    <div class="preowned-description-line">
+                                        <span class="preowned-description-line__label">Fuel Type</span>
+                                        <span class="preowned-description-line__value">{{this.fuel_type}}</span>
+                                    </div>
+                                    <div class="preowned-description-line">
+                                        <span class="preowned-description-line__label">Trim</span>
+                                        <span class="preowned-description-line__value">{{this.trim}}</span>
+                                    </div>
+                                    <div class="preowned-description-line">
+                                        <span class="preowned-description-line__label">Color</span>
+                                        <span class="preowned-description-line__value">{{this.color}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="brand-model__item__price">
+                                <span>Starting at <span class="price">AED {{this.price}}</span></span>
+                            </div>
+                        </a>
+                    </div>
+                    {{/each}}
+
+                    {{> _brand-model-pre-owned-not-found}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

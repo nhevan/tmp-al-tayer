@@ -1,0 +1,11 @@
+<div class="find-location__filter-container" data-require="base/modules/custom_select_wrapper">
+    <div class="find-location-select-option">
+        {{> select-item find-location.all_location}}
+        <img src="{{find-location.all_location.image}}" alt="" />
+    </div>
+    <div class="find-location-filter-container">
+        {{> checkbox-filter find-location.showroom}}
+        {{> checkbox-filter find-location.service_centre}}
+        {{> checkbox-filter find-location.bodyshop}}
+    </div>
+</div>

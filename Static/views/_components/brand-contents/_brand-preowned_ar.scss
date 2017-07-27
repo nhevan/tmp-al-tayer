@@ -1,0 +1,19 @@
+
+
+.preowned-model-container {
+    .preowned-description-container {
+        .preowned-description-line {
+            @include rtl() {
+                &__label {
+                    float: right;
+                    text-align: right;
+                }
+
+                &__value {
+                    float: left;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}

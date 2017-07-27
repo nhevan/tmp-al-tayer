@@ -1,0 +1,151 @@
+.featured-container {
+    .img-background-contents {
+        .readmore {
+            @include verticle-middle();
+            display: inline-block;
+            margin-top: rem(15px);
+            margin-bottom: rem(20px);
+            padding: rem(8px 15px);
+            border: 1px solid #fff;
+            border-radius: 5px;
+            color: #fff;
+            display: inline-block;
+            font-size: rem(12px);
+            line-height: rem(12px);
+            @include latoBlack();
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            &:hover {
+                background: #fff;
+                color: $blueTextColor;
+            }
+            @include respond-to-min($tabletSize) {
+                padding: rem(12px 10px);
+            }
+
+            @include respond-to-min($desktopSize) {
+                margin-bottom: rem(20px);
+                margin-top: rem(25px);
+                padding: rem(15px 30px);
+            }
+
+            span {
+                @include inline-block();
+            }
+
+            img {
+                @include inline-block();
+                margin: rem(0 6px 0 0);
+                width: auto;
+                min-height: inherit;
+
+                @include respond-to-min($desktopSize) {
+                    margin: rem(0 10px 0 0);
+                }
+
+                @include rtl() {
+                    margin: rem(0 0 0 6px);
+
+                    @include respond-to-min($largeSize) {
+                        margin: rem(0 0 0 10px);
+                    }
+                }
+            }
+        }
+    }
+
+    .common-block.img-background-block .img-background-contents {
+        padding: rem(45px 27px);
+
+        @include respond-to-min($tabletSize) {
+            padding: rem(60px 30px);
+        }
+
+        @include respond-to-min($laptopSize) {
+            padding: rem(60px 50px);
+        }
+    }
+
+    .col-sm-4 .common-block.img-background-block .img-background-contents {
+        @include respond-to-min($tabletSize) {
+            padding: rem(30px 20px);
+        }
+
+        @include respond-to-min($laptopSize) {
+            padding: rem(60px 50px);
+        }
+    }
+
+    padding-left: rem(20px);
+    padding-right: rem(20px);
+
+    @include respond-to-min($desktopSize) {
+        padding-left: rem(20px);
+        padding-right: rem(20px);
+    }
+
+    @include respond-to-min($laptopSize) {
+        padding-left: rem(50px);
+        padding-right: rem(50px);
+    }
+
+    .double-row-gutter {
+        @include respond-to-min($mobileLandscapeSize) {
+            margin-left: rem(-10px);
+            margin-right: rem(-10px);
+        }
+
+        @include respond-to-min($laptopSize) {
+            margin-left: rem(-25px);
+            margin-right: rem(-25px);
+        }
+    }
+
+    .double-column-gutter {
+        @include respond-to-min($mobileLandscapeSize) {
+            padding-left: rem(10px);
+            padding-right: rem(10px);
+        }
+
+        @include respond-to-min($desktopSize) {
+            &.col-md-4 {
+                width: 33.33333333%;
+            }
+        }
+
+        @include respond-to-min($laptopSize) {
+            padding-left: rem(25px);
+            padding-right: rem(25px);
+            &.col-md-4 {
+                width: 33.33333333%;
+            }
+        }
+        &.checking-animate {
+            &:nth-child(3n+1) {
+                transition-delay: 100ms;
+            }
+
+            &:nth-child(3n+2) {
+                transition-delay: 0ms;
+            }
+
+            &:nth-child(3n+3) {
+                transition-delay: 200ms;
+            }
+
+            &.col-sm-4 {
+                &:nth-child(3n+1) {
+                    transition-delay: 200ms;
+                }
+
+                &:nth-child(3n+2) {
+                    transition-delay: 0ms;
+                }
+
+                &:nth-child(3n+3) {
+                    transition-delay: 100ms;
+                }
+            }
+        }
+    }
+}

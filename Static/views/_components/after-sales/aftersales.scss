@@ -1,0 +1,505 @@
+@import "_aftersales_ar";
+.tradein-container {
+    .aftersales-container {
+        background: none;
+    }
+}
+.aftersales-container {
+    background: url('/assets/img/after-sales-bg.jpg') no-repeat left top #efefef;
+
+    @include respond-to-min($tabletSize) {
+        padding-left: rem(40px);
+        padding-right: rem(40px);
+    }
+
+    @include respond-to-min($desktopSize) {
+        padding-left: rem(50px);
+        padding-right: rem(50px);
+        padding-top: rem(60px);
+        padding-bottom: rem(60px);
+    }
+
+    .after-sales-sub-title {
+        @include latoBold();
+        font-size: rem(12px);
+        line-height: rem(16px);
+        color: #111111;
+        margin: rem(20px 0 15px);
+
+        @include respond-to-min($tabletSize) {
+            margin: rem(15px 0 10px);
+            font-size: rem(20px);
+            line-height: rem(30px);
+        }
+
+        @include respond-to-min($laptopSize) {
+            margin-bottom: rem(45px);
+        }
+    }
+
+    .after-sales-main__container {
+        p {
+            @include arial();
+            font-size: rem(12px);
+            line-height: rem(16px);
+            margin-bottom: rem(20px);
+            margin-top: 0px;
+            color: #515151;
+
+            @include respond-to-min($tabletSize) {
+                font-size: rem(16px);
+                line-height: rem(25px);
+                margin-bottom: rem(30px);
+            }
+
+            @include respond-to-min($laptopSize) {
+            }
+        }
+        .department-lists {
+            padding: 0;
+            margin-bottom: rem(40px);
+            list-style: none;
+
+            li.orange-top-border {
+                list-style: none;
+                &.active {
+                    .services-list {
+                        /*display: block;*/
+                    }
+                }
+                a {
+                    position: relative;
+                    background: #fff;
+                    height: rem(35px);
+                    padding: rem(0 15px);
+                    @include latoBold();
+                    font-size: rem(12px);
+                    line-height: rem(35px);
+                    color: #65686a;
+                    text-transform: uppercase;
+                    text-align: center;
+                    display: block;
+                    letter-spacing: rem(1px);
+
+                    @include respond-to-min($tabletSize) {
+                        font-size: rem(13px);
+                        padding: rem(0 60px);
+                        height: rem(70px);
+                        line-height: rem(70px);
+                    }
+                }
+
+                .sevice-descriptions {
+                    a {
+                        display: inline-block;
+                        height: auto;
+                        padding: 0;
+                        background: none;
+                        line-height: 0px;
+                        text-decoration: underline;
+
+                        @include respond-to-min($tabletSize) {
+                            padding: 0;
+                            height: auto;
+                            line-height: 0;
+                        }
+                    }
+                }
+
+                .services-list {
+                    display: none;
+                    background: transparent;
+                    padding: rem(20px 0 10px);
+                }
+
+                i.fa {
+                    transition: transform 0.3s linear;
+                    transform-origin: 50% 50%;
+                    position: absolute;
+                    text-align: center;
+                    top: 50%;
+                    margin-top: -15px;
+                    color: #003977;
+                    font-size: 0;
+                    right: rem(15px);
+
+                    @include respond-to-min($tabletSize) {
+                        right: rem(20px);
+                    }
+
+                    @include respond-to-min($laptopSize) {
+                        right: rem(50px);
+                    }
+
+                    &:before {
+                        font-size: rem(24px);
+                    }
+                }
+
+                &.active {
+                    i.fa.fa-angle-down {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+
+            @include respond-to-min($tabletSize) {
+            }
+
+            @include respond-to-min($desktopSize) {
+            }
+
+            @include respond-to-min($laptopSize) {
+                margin-bottom: rem(15px);
+            }
+        }
+
+        .roadside-assistance {
+            @extend .big-heading-group;
+            margin-bottom: rem(10px);
+            text-transform: capitalize;
+
+            @include respond-to-min($tabletSize) {
+            }
+
+            @include respond-to-min($desktopSize) {
+                padding-top: rem(35px);
+                line-height: rem(50px);
+            }
+
+            & + p {
+                margin-top: 0;
+            }
+        }
+
+        .after-sale {
+            &__contact-container {
+                @include verticle-middle();
+                display: block;
+                width: 100%;
+                font-size: 0;
+                padding: rem(10px 0);
+                margin-bottom: rem(20px);
+
+                @include respond-to-min($laptopSize) {
+                    margin-bottom: rem(0px);
+                }
+
+                span {
+                    @include latoBold();
+                    display: inline-block;
+                    font-size: rem(16px);
+                    line-height: rem(16px);
+                    color: #003977;
+                    vertical-align: middle;
+
+                    @include respond-to-min($tabletSize) {
+                        font-size: rem(20px);
+                        line-height: rem(20px);
+                    }
+                }
+            }
+
+            &__logo {
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: rem(10px);
+                @include respond-to-min($mobileLandscapeSize) {
+                    margin-right: rem(50px);
+                }
+            }
+
+            &__phone {
+                display: inline-block;
+                vertical-align: middle;
+                margin: rem(0 5px 0 0);
+
+                @include respond-to-min($mobileLandscapeSize) {
+                    margin: rem(0 18px 0 0);
+                }
+            }
+        }
+    }
+
+    .col-lg-4 .row {
+        @include respond-to-min($tabletSize) {
+            margin-left: rem(-10px);
+            margin-right: rem(-10px);
+        }
+
+        @include respond-to-min($desktopSize) {
+            margin-left: rem(-15px);
+            margin-right: rem(-15px);
+        }
+
+        .col-sm-6 {
+            @include respond-to-min($tabletSize) {
+                padding-left: rem(10px);
+                padding-right: rem(10px);
+            }
+
+            @include respond-to-min($desktopSize) {
+                padding-left: rem(15px);
+                padding-right: rem(15px);
+            }
+        }
+    }
+}
+
+li.service-list-item {
+    margin-bottom: rem(20px);
+    list-style: none;
+    font-size: 0;
+    @include verticle-middle();
+
+    @include respond-to-min($tabletSize) {
+        margin-bottom: rem(30px);
+    }
+
+    .service-thumbnail {
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: rem(60px);
+        background-position: center center;
+        width: 35%;
+        overflow: hidden;
+        margin-right: rem(10px);
+        padding: rem(0);
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: auto;
+        }
+        @include respond-to-min($tabletSize) {
+            margin-right: rem(30px);
+        }
+
+        @include respond-to-min($desktopSize) {
+        }
+
+        @include respond-to-min($laptopSize) {
+        }
+
+        h2.service-title {
+            margin: 0;
+            @include latoBold();
+            font-size: rem(12px);
+            line-height: rem(16px);
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: rem(1px);
+            position: absolute;
+            left: rem(15px);
+            top: 50%;
+            margin-top: rem(-24px);
+            @include respond-to-min($tabletSize) {
+                font-size: rem(18px);
+                line-height: rem(24px);
+                left: rem(25px);
+            }
+            @include respond-to-min($desktopSize) {
+                left: rem(40px);
+            }
+            span {
+                display: block;
+            }
+        }
+    }
+
+    .sevice-descriptions {
+        width: 58%;
+        @include inline-block();
+        font-size: rem(12px);
+        line-height: rem(16px);
+        letter-spacing: rem(0.5px);
+        ul {
+            li, p, a, span, ol {
+                @include arial();
+                font-size: rem(12px);
+                line-height: rem(16px);
+                color: #515151;
+                @include respond-to-min($tabletSize) {
+                    font-size: rem(16px);
+                    line-height: rem(25px);
+                }
+            }
+        }
+        &.full-width {
+            width: 100%;
+        }
+        @include respond-to-min($tabletSize) {
+            font-size: rem(18px);
+            line-height: rem(24px);
+        }
+
+        @include respond-to-min($laptopSize) {
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+}
+
+.sidebar-block {
+    position: relative;
+    margin-bottom: rem(30px);
+
+    @include respond-to-min($tabletSize) {
+        margin-bottom: rem(60px);
+    }
+
+    @include respond-to-min($desktopSize) {
+        margin-bottom: rem(20px);
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        min-height: 185px;
+
+        @include respond-to-min($tabletSize) {
+            min-height: 220px;
+        }
+
+        @include respond-to-min($largeSize) {
+            min-height: 265px;
+        }
+    }
+
+    .sidebar-block-contents {
+        @include vertical-align(absolute);
+        left: 0;
+        width: 100%;
+        padding: rem(0 35px);
+        margin-top: rem(-10px);
+
+        @include respond-to-min($tabletSize) {
+            padding: rem(0 40px);
+        }
+
+        @include respond-to-min($laptopSize) {
+        }
+
+        @include respond-to-min($largeSize) {
+            padding: rem(0 50px);
+        }
+
+        h2.hotline {
+            @include latoBold();
+            color: #f3ebc8;
+            font-size: rem(14px);
+            line-height: rem(16px);
+            text-transform: uppercase;
+            word-spacing: rem(1px);
+            letter-spacing: rem(0.5px);
+            margin-top: 0;
+            margin-bottom: rem(15px);
+            background:rgba(0,0,0,0.6);
+            padding:10px;
+            @include respond-to-min($tabletSize) {
+                font-size: rem(16px);
+                line-height: rem(18px);
+                margin-bottom: rem(20px);
+            }
+
+            @include respond-to-min($laptopSize) {
+                font-size: rem(20px);
+                line-height: rem(22px);
+            }
+        }
+
+        h3 {
+            @include latoNormal();
+            font-size: rem(18px);
+            line-height: rem(20px);
+            color: #fff;
+            margin-top: 0;
+            margin-bottom: rem(15px);
+            letter-spacing: rem(0.5px);
+            background:rgba(0,0,0,0.6);
+            padding:10px;
+
+            @include respond-to-min($tabletSize) {
+                font-size: rem(20px);
+                margin-bottom: rem(20px);
+                line-height: rem(24px);
+            }
+
+            @include respond-to-min($laptopSize) {
+                font-size: rem(24px);
+                line-height: rem(30px);
+            }
+        }
+
+        a.readmore {
+            @include verticle-middle();
+            padding: rem(0 20px);
+            border: 1px solid #fff;
+            display: inline-block;
+            border-radius: rem(2px);
+            height: rem(34px);
+            line-height: rem(34px);
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            background-position: 20px center;
+            background-repeat: no-repeat;
+            font-size: rem(0);
+            min-height: rem(35px);
+            letter-spacing: rem(0.5px);
+            font-weight: 800;
+            background-color: #fff;
+            color: $blueTextColor;
+            &:hover {
+                @extend %white_button_hover_state;
+            }
+            // &:hover {
+            //     background-color: $blueTextColor;
+            // }
+
+            @include respond-to-min($tabletSize) {
+                padding: rem(0 25px);
+                height: rem(42px);
+                line-height: rem(42px);
+            }
+            @include respond-to-min($desktopSize) {
+                height: rem(48px);
+                line-height: rem(48px);
+            }
+            @include respond-to-min($largeSize) {
+                font-size: rem(12px);
+                padding: rem(0 30px);
+                min-height: rem(50px);
+            }
+
+            span {
+                @include inline-block();
+                font-size: rem(9px);
+                @include respond-to-min($tabletSize) {
+                    font-size: rem(10px);
+                }
+                @include respond-to-min($largeSize) {
+                    font-size: rem(12px);
+                }
+            }
+
+            img {
+                @include inline-block();
+                margin: rem(0 6px 0 0);
+                width: auto;
+                min-height: 0;
+                max-height: rem(13px);
+                @include respond-to-min($tabletSize) {
+                    max-height: rem(18px);
+                }
+                @include respond-to-min($largeSize) {
+                    margin: rem(0 10px 0 0);
+                }
+            }
+        }
+    }
+}

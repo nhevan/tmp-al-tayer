@@ -1,0 +1,116 @@
+.vehicle-detail-see-it-for-yourself {
+    background-color: #efefef;
+    padding-top: rem(20px);
+    padding-bottom: rem(20px);
+
+    @include respond-to-min($tabletSize) {
+        padding-top: rem(40px);
+        padding-bottom: rem(40px);
+    }
+
+    @include respond-to-min($desktopSize) {
+        padding-top: rem(55px);
+        padding-bottom: rem(55px);
+    }
+
+    &.container-fluid {
+        .row {
+            @include respond-to-min($desktopSize) {
+                font-size: 0;
+                vertical-align: middle;
+
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    width: 0;
+                    height: 100%;
+                    vertical-align: middle;
+                }
+
+                .col-md-6 {
+                    display: inline-block;
+                    vertical-align: middle;
+                    float: none;
+                }
+            }
+        }
+    }
+
+    h2 {
+        @include latoNormal();
+        padding: 0;
+        color: #000;
+        text-transform: uppercase;
+        font-size: rem(18px);
+        line-height: rem(20px);
+        margin: rem(0 0 10px);
+
+        @include respond-to-min($tabletSize) {
+            font-size: rem(36px);
+            line-height: rem(40px);
+            margin: rem(0 0 20px);
+        }
+
+        @include respond-to-min($desktopSize) {
+        }
+    }
+
+    p {
+        padding: 0;
+        color: $grayText;
+        @include latoNormal();
+        margin: rem(0 0 15px);
+        font-size: rem(12px);
+        line-height: rem(18px);
+
+        @include respond-to-min($tabletSize) {
+            font-size: rem(18px);
+            line-height: rem(30px);
+            margin: rem(0 0 30px);
+        }
+
+        @include respond-to-min($desktopSize) {
+            margin: rem(0);
+        }
+    }
+
+}
+.vehicle-detail-video-container {
+    position: relative;
+
+    img {
+        width: 100%;
+    }
+
+    .vehicle-detail-video-play-button {
+        width: rem(60px);
+        height: rem(39px);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -20px 0 0 -30px;
+        text-decoration: none;
+        background-color: #fff;
+        border-radius: 4px;
+        z-index: 1;
+        cursor: pointer;
+        .video-play-arrow {
+            width: 0px;
+            height: 0px;
+            border-left: rem(15px solid $orangeBorder);
+            border-top: rem(8px solid transparent);
+            border-bottom: rem(8px solid transparent);
+            border-right: none;
+            @include both-center(absolute);
+        }
+    }
+
+    .player-video {
+        position: absolute;
+        z-index: 5;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+    }
+}

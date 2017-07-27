@@ -1,0 +1,104 @@
+.finance-insurance-form-container {
+    .finance-insurance__tab-row {
+        .finance-insurance__tab-column {
+            @include rtl() {
+                float: right;
+                border-right: rem(1px solid #dadbe2);
+                border-left: none;
+
+                &:first-child {
+                    border-right: none;
+                }
+
+                &.active {
+
+                    &:first-child {
+                        border-right: rem(1px solid #dadbe2);
+                        border-left: none;
+                    }
+
+                    &:last-child {
+                        border-left: rem(1px solid #dadbe2);
+                    }
+                }
+
+                span {
+                    @include respond-to-min($desktopSize) {
+                        @include both-center-rtl(absolute);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.container-fluid {
+
+    .header-form-group {
+        @include rtl() {
+            padding: rem(15px 32px 15px 0);
+
+            @include respond-to-min($tabletSize) {
+                padding: rem(20px 32px 20px 0);
+            }
+
+            img {
+                left: auto;
+                right: 0;
+            }
+        }
+    }
+
+    .finance-insurance-form-list {
+        .col-md-6 {
+            @include rtl() {
+                @include respond-to-min($tabletSize) {
+                    &:nth-child(2n+1) {
+                        padding-left: rem(0);
+                        padding-right: 0;
+                    }
+
+                    &:nth-child(2n) {
+                        padding-right: rem(0);
+                        padding-left: 0;
+                    }
+                }
+
+                @include respond-to-min($desktopSize) {
+
+                    &:nth-child(2n+1) {
+                        padding-left: rem(30px);
+                        padding-right: 0;
+                    }
+
+                    &:nth-child(2n) {
+                        padding-left: 0;
+                        padding-right: rem(30px);
+                    }
+                }
+            }
+        }
+    }
+
+    .g-recaptcha {
+        @include respond-to-max(342px) {
+            @include rtl() {
+                margin-left: 0px;
+                margin-right: rem(-20px);
+            }
+        }
+    }
+
+    .group-two-input {
+        .input-selection-container {
+            &:first-child {
+                input, select, span {
+                    @include rtl() {
+                        border-right: rem(1px solid #c8c8c8);
+                        border-left: none;
+                    }
+                }
+            }
+        }
+    }
+}

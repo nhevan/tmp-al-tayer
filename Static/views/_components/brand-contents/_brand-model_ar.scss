@@ -1,0 +1,55 @@
+
+.brand-model-filter {
+    @include rtl() {
+        .brand-model-filter__dropdown-container {
+            @include respond-to-min($tabletSize) {
+                right: rem(25px);
+                left: rem(156px);
+            }
+        }
+
+        button {
+            float: left;
+        }
+
+        &__dropdown {
+            select {
+                background: url('/assets/img/select_arrow.png') no-repeat left 10px center;
+
+                @include respond-to-min($tabletSize) {
+                    background: url('/assets/img/select_arrow.png') no-repeat left 20px center;
+                }
+            }
+
+            .selected-label {
+                background: url('/assets/img/select_arrow.png') no-repeat left 10px center;
+
+                @include respond-to-min($tabletSize) {
+                    background: url('/assets/img/select_arrow.png') no-repeat left 20px center;
+                }
+            }
+        }
+    }
+}
+
+.brand-model__item {
+    &.col-xs-12 {
+        @include rtl() {
+            @include respond-to-min($tabletSize) {
+                &:nth-of-type(2n+3) {
+                    clear: right;
+                }
+            }
+
+            @include respond-to-min($desktopSize) {
+                &:nth-of-type(2n+3) {
+                    clear: none;
+                }
+
+                &:nth-of-type(3n+4) {
+                    clear: right;
+                }
+            }
+        }
+    }
+}

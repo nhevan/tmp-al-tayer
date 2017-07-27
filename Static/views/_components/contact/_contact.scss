@@ -1,0 +1,271 @@
+@import "_contact_ar";
+.contact-top-content {
+    @extend .no-slider-padding;
+    background-color: #efefef;
+    border-bottom: rem(1px solid #d2d2d2);
+    padding-bottom: rem(24px);
+    padding-top: rem(20px) !important;
+    @include respond-to-min($tabletSize) {
+        padding-bottom: rem(25px);
+    }
+
+    @include respond-to-min($desktopSize) {
+        padding-bottom: rem(53px);
+    }
+    @include respond-to-min($tabletSize) {
+        padding-top: rem(30px) !important;
+    }
+    @include respond-to-min($laptopSize) {
+        padding-top: 8.4375rem !important;
+    }
+    h1 {
+        @extend .big-heading-group;
+        margin-bottom: rem(5px);
+        text-transform: capitalize;
+        font-size: rem(18px);
+        @include respond-to-min($tabletSize) {
+            font-size: rem(36px);
+            line-height: rem(50px);
+        }
+    }
+
+    p {
+        @extend .text-paragraph;
+        margin-bottom: rem(20px);
+        font-size: rem(12px);
+        @include respond-to-min($tabletSize) {
+            margin-bottom: rem(35px);
+            font-size: rem(14px);
+        }
+        @include respond-to-min($desktopSize) {
+            font-size: rem(18px);
+        }
+    }
+
+    .contact-map-container {
+        overflow: hidden;
+        font-size: 0;
+        display: inline-block;
+        width: 100%;
+        vertical-align: middle;
+
+        .contact-map {
+            border: rem(1px solid #c1c1c1);
+            height: rem(175px);
+            margin-bottom: rem(20px);
+
+            @include respond-to-min($tabletSize) {
+                height: rem(350px);
+                margin-bottom: rem(40px);
+            }
+
+            @include respond-to-min($desktopSize) {
+                margin-bottom: rem(0px);
+                display: inline-block;
+                vertical-align: middle;
+                width: 74%;
+            }
+
+            @include respond-to-min($largeSize) {
+                height: rem(400px);
+            }
+
+            .marker {
+                &__container {
+                    width: rem(13px);
+                    height: rem(30px);
+                }
+            }
+        }
+
+        .contact-map-information {
+
+            @include respond-to-min-max($mobileLandscapeSize, $tabletSize) {
+                .col-sm-6 {
+                    width: 50%;
+                }
+            }
+
+            @include respond-to-min($desktopSize) {
+                width: 26%;
+                display: inline-block;
+                vertical-align: middle;
+                padding-left: rem(35px);
+
+                @include rtl() {
+                    padding-right: rem(35px);
+                    padding-left: 0;
+                }
+            }
+
+            .col-sm-6:nth-child(2) {
+                @include respond-to-min($mobileLandscapeSize) {
+                    padding-top: rem(34px);
+                }
+
+                @include respond-to-min($desktopSize) {
+                    padding-top: rem(0px);
+                }
+            }
+
+            h2 {
+                color: #000;
+                line-height: rem(30px);
+                position: relative;
+                padding-left: rem(20px);
+                margin: 0;
+                margin-bottom: rem(6px);
+                text-transform: uppercase;
+                @include latoBold();
+                font-size: rem(12px);
+                @include respond-to-min($mobileLandscapeSize) {
+                    font-size: rem(16px);
+                }
+                @include respond-to-min($tabletSize) {
+                    padding-left: rem(25px);
+                }
+
+                img {
+                    @include vertical-align(absolute);
+                    left: 0px;
+                    max-width: rem(12px);
+
+                    @include respond-to-min($tabletSize) {
+                        max-width: rem(20px);
+                    }
+                }
+
+                @include rtl() {
+                    padding-right: rem(25px);
+                    padding-left: 0;
+
+                    img {
+                        left: auto;
+                        right: 0px;
+                    }
+                }
+            }
+
+            p {
+                @include arial();
+                font-size: rem(11px);
+                line-height: rem(13px);
+                color: #6a6a6a;
+                margin-bottom: rem(10px);
+
+                @include respond-to-min($mobileLandscapeSize) {
+                    font-size: rem(16px);
+                    line-height: rem(25px);
+                    margin-bottom: rem(0px);
+                }
+
+                @include respond-to-min($desktopSize) {
+                    margin-bottom: rem(25px);
+                }
+            }
+
+            .container-contact-information {
+                @include respond-to-min($mobileLandscapeSize) {
+                    float: right;
+
+                    @include rtl() {
+                        float: left;
+                    }
+                }
+
+                @include respond-to-min($desktopSize) {
+                    float: none;
+
+                    @include rtl() {
+                        float: none;
+                    }
+                }
+            }
+
+            .contact-infor__mail {
+                @include arial();
+                color: #003977;
+                font-size: rem(12px);
+                line-height: rem(24px);
+                position: relative;
+                padding-left: rem(33px);
+                display: block;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+
+                @include respond-to-min($mobileLandscapeSize) {
+                    font-size: rem(16px);
+                    line-height: rem(30px);
+                }
+
+                img {
+                    @include vertical-align(absolute);
+                    left: 0px;
+                    max-width: rem(20px);
+
+                    @include respond-to-min($mobileLandscapeSize) {
+                        max-width: rem(30px);
+                    }
+                }
+
+                @include rtl() {
+                    padding-left: 0;
+                    padding-right: rem(33px);
+
+                    img {
+                        left: auto;
+                        right: 0px;
+                    }
+                }
+            }
+
+            .contact-infor__phone {
+                @extend .contact-infor__mail;
+                padding-left: rem(30px);
+
+                img {
+                    max-width: rem(27px);
+                }
+
+                @include rtl() {
+                    padding-left: 0;
+                    padding-right: rem(30px);
+                }
+            }
+        }
+    }
+}
+
+
+.contact-form-container {
+    padding-top: rem(11px);
+    padding-bottom: rem(35px);
+    background: #fff;
+    @include respond-to-min($tabletSize) {
+        padding-bottom: rem(50px);
+    }
+    .input-selection-container {
+        margin-bottom: rem(20px);
+		&:first-child {
+			/*margin-top: 3px;*/
+		}
+    }
+    .header-form-group {
+        margin-bottom: 0;
+		font-size: rem(15px);
+		@include respond-to-min($tabletSize) {
+			font-size: rem(16px);
+		}
+    }
+    .textarea-item-container {
+        height: rem(130px);
+    }
+    .button-common {
+        @include respond-to-max($tabletSize) {
+            padding: rem(9px 15px);
+        }
+    }
+}

@@ -1,0 +1,159 @@
+@import "_vehicle-detail-models_ar";
+
+.vehicle-detail-models-container {
+    .row.double-row-gutter {
+        @include respond-to-min($tabletSize) {
+            margin-left: rem(-10px);
+            margin-right: rem(-10px);
+        }
+
+        @include respond-to-min($desktopSize) {
+            margin-left: rem(-25px);
+            margin-right: rem(-25px);
+        }
+    }
+
+    .col-sm-6 {
+        @include respond-to-min($tabletSize) {
+            padding-left: rem(10px);
+            padding-right: rem(10px);
+
+            &:nth-child(2n+1) {
+                clear: left;
+            }
+        }
+
+        @include respond-to-min($desktopSize) {
+            padding-left: rem(25px);
+            padding-right: rem(25px);
+
+            &:nth-child(2n+1) {
+                clear: none;
+            }
+
+            &:nth-child(3n+1) {
+                clear: left;
+            }
+        }
+    }
+
+    background: #fff;
+    padding-top: rem(25px);
+    padding-bottom: rem(25px);
+
+    @include respond-to-min($tabletSize) {
+        padding-top: rem(30px);
+        padding-bottom: rem(30px);
+    }
+
+    h2 {
+        @extend .big-heading-group;
+    }
+
+    .vehicle-model-block-title {
+        @include latoBold();
+        color: $blueTextColor;
+        margin: rem(0 0 10px);
+        padding: 0;
+        text-transform: uppercase;
+        font-size: rem(15px);
+        line-height: rem(15px);
+        letter-spacing: rem(1px);
+
+        @include respond-to-min($tabletSize) {
+            font-size: rem(20px);
+            line-height: rem(20px);
+        }
+    }
+
+    .thumbnail {
+        margin-bottom: rem(15px);
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .vehicle-model-short-description {
+        padding: rem(0);
+        margin-bottom: rem(20px);
+
+        @include respond-to-min($tabletSize) {
+            padding: rem(0 30px);
+        }
+
+        @include respond-to-min($desktopSize) {
+            padding: rem(0 25px);
+        }
+
+        .model-specifications {
+            padding: 0;
+            margin: rem(0 0 7px);
+            @include latoNormal();
+            color: $grayText;
+            font-size: rem(14px);
+
+            @include respond-to-min($tabletSize) {
+                margin: rem(0 0 8px);
+            }
+
+            @include respond-to-min($desktopSize) {
+                margin: rem(0 0 15px);
+            }
+
+            li {
+                list-style: none;
+                @include latoNormal();
+                color: $grayText;
+                list-style: none;
+                padding-left: rem(10px);
+                background: url('/assets/img/verhicle-model-list-type.jpg') no-repeat 0 10px;
+                font-size: rem(12px);
+                line-height: rem(18px);
+
+                @include respond-to-min($tabletSize) {
+                    font-size: rem(14px);
+                    line-height: rem(20px);
+                }
+            }
+        }
+
+        .starting-at {
+            @include latoNormal();
+            border-top: 1px solid #cacaca;
+            margin: 0;
+            color: $grayText;
+            font-size: rem(12px);
+            line-height: rem(12px);
+            padding: rem(10px 0);
+            letter-spacing: rem(0.5px);
+
+            @include respond-to-min($tabletSize) {
+                font-size: rem(14px);
+                line-height: rem(14px);
+                padding: rem(12px 0);
+            }
+
+            @include respond-to-min($desktopSize) {
+                padding: rem(18px 0);
+            }
+
+            .price {
+                color: $orangeBorder;
+                @include latoBold();
+            }
+        }
+    }
+
+    @include respond-to-min($tabletSize) {
+    }
+
+    @include respond-to-min($desktopSize) {
+        padding-top: rem(50px);
+        padding-bottom: rem(50px);
+    }
+
+    @include respond-to-min($laptopSize) {
+    }
+}

@@ -1,0 +1,194 @@
+.paginations-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.pagination-item {
+    @include latoNormal();
+    width: rem(35px);
+    height: rem(35px);
+    border: rem(1px solid #6a6a6a);
+    color: #6a6a6a;
+    line-height: rem(35px);
+    font-size: rem(18px);
+    border-radius: rem(3px);
+    text-decoration: none;
+    display: block;
+    text-align: center;
+
+    i.fa {
+        font-size: 0;
+
+        &:before {
+            font-size: rem(24px);
+            text-indent: 0;
+        }
+    }
+
+    @include respond-to-max($mobileLandscapeSize) {
+        width: rem(30px);
+        height: rem(30px);
+        font-size: rem(14px);
+        line-height: rem(30px);
+
+        i.fa {
+            &:before {
+                font-size: rem(18px);
+                /*position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);*/
+            }
+        }
+    }
+}
+
+.paginations {
+    margin: 0;
+    padding: 0;
+    float: left;
+    font-size: 0;
+
+    li {
+        margin-right: rem(10px);
+        list-style: none;
+        display: inline-block;
+
+        @include respond-to-max($mobileLandscapeSize) {
+            margin-right: rem(5px);
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &.current-page {
+            span {
+                background: #6a6a6a;
+                color: #fff;
+            }
+        }
+
+        &.out-number {
+            span {
+                border: none;
+            }
+        }
+
+        a {
+            cursor: pointer;
+        }
+
+        a, span {
+            @extend .pagination-item;
+        }
+
+        a:hover {
+            background: #6a6a6a;
+            color: #fff;
+        }
+    }
+
+    @include rtl() {
+        float: right;
+
+        li {
+            margin-left: rem(10px);
+            margin-right: 0;
+
+            &:last-child {
+                margin-left: 0;
+            }
+
+            @include respond-to-max($mobileLandscapeSize) {
+                margin-left: rem(5px);
+
+                &:last-child {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
+
+.pagination-navigation {
+    float: right;
+    font-size: 0;
+
+    &:after {
+        clear: both;
+    }
+
+    a {
+        cursor: pointer;
+    }
+
+    a, span {
+        @extend .pagination-item;
+    }
+
+    .pagination-arrow {
+        display: inline-block;
+        margin-left: rem(10px);
+
+        &:nth-child(1) {
+            margin-left: 0;
+        }
+
+        @include respond-to-max($mobileLandscapeSize) {
+            margin-left: rem(5px);
+
+            &:nth-child(1) {
+                margin-left: 0;
+            }
+        }
+
+        span {
+            color: #c7cacc;
+            cursor: text;
+            border-color: #c7cacc;
+        }
+    }
+
+    @include respond-to-max($mobileLandscapeSize) {
+        float: left;
+        clear: left;
+        margin-top: rem(10px);
+    }
+
+    @include rtl() {
+        float: left;
+
+        .pagination-arrow {
+            display: inline-block;
+            margin-right: rem(10px);
+            margin-left: 0;
+
+            &:nth-child(1) {
+                margin-right: 0;
+            }
+
+
+            @include respond-to-max($mobileLandscapeSize) {
+                margin-right: rem(5px);
+
+                &:nth-child(1) {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        @include respond-to-max($mobileLandscapeSize) {
+            float: right;
+            clear: right;
+        }
+
+        .fa-angle-left:before {
+            content: "\f105";
+        }
+
+        .fa-angle-right:before {
+            content: "\f104";
+        }
+    }
+}

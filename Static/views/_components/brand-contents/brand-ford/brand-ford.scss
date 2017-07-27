@@ -1,0 +1,56 @@
+.brand-ford-container {
+    .overview-content-block {
+        border-top: 5px solid $orangeBorder;
+
+        .block-overview {
+            position: absolute;
+            bottom: rem(18px);
+            left: rem(20px);
+            right: rem(20px);
+            z-index: 2;
+
+            @include respond-to-min($tabletSize) {
+                bottom: rem(25px);
+            }
+
+            @include respond-to-min($desktopSize) {
+            }
+
+            @include respond-to-min($laptopSize) {
+                left: rem(30px);
+                right: rem(30px);
+            }
+
+            h3 {
+                margin: 0;
+                &:nth-child(1) {
+                    color: $orangeBorder;
+                    @include latoBlack();
+                    font-size: rem(12px);
+                    line-height: rem(20px);
+                    text-transform: uppercase;
+                    text-decoration: none;
+                }
+
+                &:nth-child(2) {
+                    @include latoBold();
+                    color: #fff;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    margin: 0;
+                    font-size: rem(14px);
+
+                    @include respond-to-min($tabletSize) {
+                        font-size: rem(16px);
+                        line-height: rem(18px);
+                    }
+
+                    @include respond-to-min($largeSize){
+                        font-size: rem(18px);
+                        line-height: rem(20px);
+                    }
+                }
+            }
+        }
+    }
+}

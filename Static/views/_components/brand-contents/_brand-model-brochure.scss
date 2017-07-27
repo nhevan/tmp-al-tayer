@@ -1,0 +1,35 @@
+.brand-tab__container_model_brochure {
+    .brand-model__item {
+        .brand-model__item__text-container {
+            h3, a.download-brochure {
+                font-family: Georgia;
+                font-style: italic;
+                font-weight: 400;
+                color: #000;
+                text-transform: uppercase;
+                font-size: rem(18px);
+                line-height: rem(28px);
+
+                @include respond-to-min($tabletSize) {
+                    font-size: rem(18px);
+                    line-height: rem(28px);
+                }
+
+                @include respond-to-min($desktopSize) {
+                }
+
+                @include respond-to-min($laptopSize) {
+                    font-size: rem(21px);
+                    line-height: rem(32px);
+                }
+            }
+
+            a.download-brochure {
+                color: #de0f0d;
+                text-decoration: none;
+            }
+        }
+
+        margin: rem(0 0 35px);
+    }
+}

@@ -1,0 +1,31 @@
+---
+title: "Search Results list contents page"
+---
+<div class="container-fluid double-container-gutter search-results-list-container no-slider-padding">
+    <div class="row double-row-gutter search-results-list-filter-container">
+        <div class="col-xs-12 col-md-8 double-column-gutter">
+            <span class="search-results-summary">Found <span class="search-number-result">35</span> results for "Ford"</span>
+        </div>
+        <div class="col-xs-12 col-md-4 double-column-gutter search-filter-container">
+            <div class="items-per-page-filter">
+                <form action="#" data-require="base/form-search-filter">
+                    <span>Show:</span> {{> select-item items-per-page.items}}
+                    <input type="hidden" name="page" value="0"/>
+                </form>
+            </div>
+        </div>
+    </div>
+    {{#each results-list.items}}
+    <div class="row double-row-gutter search-result-item">
+        <div class="col-xs-12 double-column-gutter search-result-contents">
+            <h3 class="search-result-title"><a href="{{permalink}}">{{result-title}}</a></h3>
+            <p>{{descriptions}}</p>
+            <a href="{{permalink}}" class="readmore">{{permalink}}</a>
+        </div>
+    </div>
+    {{/each}}
+    <div class="paginations-container">
+        {{> paginations}}
+    </div>
+</div>
+

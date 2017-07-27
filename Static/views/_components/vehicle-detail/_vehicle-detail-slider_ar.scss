@@ -1,0 +1,69 @@
+.vehicle-slider-container {
+    .owl-nav {
+        @include rtl() {
+            .owl-prev {
+                background: url('/assets/img/slider-arrow-right.png') no-repeat center center;
+                background-size: 8px auto;
+                left: auto;
+                right: rem(10px);
+
+                @include respond-to-min($tabletSize) {
+                    background-size: 17px auto;
+                    left: auto;
+                    right: rem(23px);
+                }
+
+                @include respond-to-min($desktopSize) {
+                    background-size: 100% auto;
+                    left: auto;
+                    right: rem(40px);
+                }
+
+                &:hover {
+                    background: url('/assets/img/slider-arrow-right.png') no-repeat center center;
+                    background-size: 8px auto;
+
+                    @include respond-to-min($tabletSize) {
+                        background-size: 17px auto;
+                    }
+
+                    @include respond-to-min($desktopSize) {
+                        background-size: 100% auto;
+                    }
+                }
+            }
+
+            .owl-next {
+                background: url('/assets/img/slider-arrow-left.png') no-repeat center center;
+                background-size: 8px auto;
+                right: auto;
+                left: rem(10px);
+
+                @include respond-to-min($tabletSize) {
+                    background-size: 17px auto;
+                    right: auto;
+                    left: rem(23px);
+                }
+
+                @include respond-to-min($desktopSize) {
+                    background-size: 100% auto;
+                    right: auto;
+                    left: rem(40px);
+                }
+
+                &:hover {
+                    background: url('/assets/img/slider-arrow-left.png') no-repeat center center;
+                    background-size: 8px auto;
+
+                    @include respond-to-min($tabletSize) {
+                        background-size: 17px auto;
+                    }
+
+                    @include respond-to-min($desktopSize) {
+                        background-size: 100% auto;
+                    }
+                }
+            }
+        }
+    }
+}

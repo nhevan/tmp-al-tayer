@@ -1,0 +1,21 @@
+.newcars-container {
+    .newcar-item {
+        @include rtl() {
+            @include respond-to-min($tabletSize) {
+                &:nth-child(2n+3) {
+                    clear: right;
+                }
+            }
+
+            @include respond-to-min($laptopSize) {
+                &:nth-child(2n+3) {
+                    clear: none;
+                }
+
+                &:nth-child(4n+5) {
+                    clear: right;
+                }
+            }
+        }
+    }
+}

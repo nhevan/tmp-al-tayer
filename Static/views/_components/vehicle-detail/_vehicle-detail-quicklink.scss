@@ -1,0 +1,163 @@
+@import "_vehicle-detail-quicklink_ar";
+
+.quicklink-container {
+    background-color: #efefef;
+
+    @include respond-to-max($tabletSize) {
+        padding: 0;
+    }
+
+    .row {
+        margin-left: 0px;
+        margin-right: 0px;
+        border-bottom: rem(1px solid #d4d5db);
+        border-top: rem(1px solid #d4d5db);
+
+        @include respond-to-min($tabletSize) {
+            border: rem(1px solid #d4d5db);
+        }
+
+        @include respond-to-min($desktopSize) {
+            border: none;
+        }
+    }
+
+    .quicklink-item__column {
+        border-right: rem(1px solid #d4d5db);
+        border-bottom: rem(1px solid #d4d5db);
+        padding: 0;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        &:nth-child(2n) {
+            border-right: none;
+        }
+
+        &:nth-last-child(2):nth-child(2n+1) {
+            border-bottom: none;
+        }
+
+        @include respond-to-min($tabletSize) {
+            &:nth-child(2n) {
+                border-right: rem(1px solid #d4d5db);
+            }
+
+            &:nth-last-child(2):nth-child(2n+1) {
+                /*border-bottom: rem(1px solid #d4d5db);*/
+            }
+
+            &:nth-last-child(2):nth-child(3n+2) {
+                border-bottom: none;
+            }
+
+            &:nth-last-child(2):nth-child(3n+1) {
+                border-bottom: none;
+            }
+
+            &:nth-last-child(3):nth-child(3n+1) {
+                border-bottom: none;
+            }
+            &:nth-child(3n){
+                /*border-right: none;*/
+            }
+        }
+
+        @include respond-to-min($desktopSize) {
+            border-bottom: none;
+
+            &:nth-last-child(2):nth-child(2n+1) {
+                border-bottom: none;
+            }
+
+            &:nth-child(2n) {
+                border-right: none;
+            }
+
+            &:nth-child(n) {
+                border-right: rem(1px solid #d4d5db);
+            }
+
+            &:first-child {
+                border-left: rem(1px solid #d4d5db);
+            }
+        }
+
+        .quicklink-item__container {
+            display: block;
+            margin: 0 auto;
+            font-size: 0px;
+            vertical-align: middle;
+            height: rem(60px);
+
+            @include verticle-middle();
+            @include horizontal-center(relative);
+            padding-left: rem(20px);
+
+            @include respond-to-min($tabletSize) {
+                height: rem(70px);
+                padding-left: rem(0px);
+                text-align: center;
+            }
+
+            img {
+                display: inline-block;
+                margin: rem(0 10px 0 0);
+                vertical-align: middle;
+                max-width: rem(18px);
+
+                @include respond-to-min($tabletSize) {
+                    max-width: none;
+                }
+
+                @include respond-to-min($desktopSize) {
+                }
+            }
+
+            .quicklink-item__text-container {
+                display: inline-block;
+                vertical-align: middle;
+                text-align: left;
+
+                span {
+                    display: block;
+                    color: $blueTextColor;
+                    @include latoBold();
+                    text-transform: uppercase;
+                    font-size: rem(12px);
+                    line-height: rem(14px);
+                    letter-spacing: rem(1px);
+
+                    @include respond-to-min($tabletSize) {
+                        font-size: rem(13px);
+                        line-height: rem(18px);
+                    }
+
+                    @include respond-to-min($desktopSize) {
+                        font-size: rem(12px);
+                        line-height: rem(16px);
+                    }
+
+                    @include respond-to-min($laptopSize) {
+                        font-size: rem(13px);
+                        line-height: rem(18px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.flipping-book {
+    &__container {
+        background-color: rgba(0,0,0,0.5);
+    }
+
+    &__download {
+    }
+
+    &__close {
+    }
+}

@@ -1,0 +1,100 @@
+
+.find-location-select-option {
+    @include rtl() {
+        text-align: left;
+
+        .input-selection-container {
+            left: rem(50px);
+            right: 0;
+            text-align: right;
+        }
+    }
+}
+
+.find-location-filter-container {
+    @include rtl() {
+        float: right;
+
+        @include respond-to-min($desktopSize) {
+            float: left;
+        }
+    }
+}
+
+.filter-location.checkbox-container {
+    @include rtl() {
+        float: right;
+
+        &:nth-child(2):nth-last-child(2) {
+            text-align: left;
+        }
+
+        @include respond-to-min(600px) {
+            &:nth-child(3) {
+                text-align: left;
+            }
+        }
+
+        @include respond-to-min($desktopSize) {
+            &:nth-child(2):nth-last-child(2) {
+                text-align: right;
+            }
+
+            &:nth-child(2) {
+                text-align: right;
+            }
+
+            margin-left: 0;
+            margin-right: rem(10px);
+        }
+
+        @include respond-to-min($laptopSize) {
+            margin-left: 0;
+            margin-right: rem(30px);
+        }
+
+        @include respond-to-min($largeSize) {
+            margin-left: 0;
+            margin-right: rem(100px);
+        }
+
+        &:first-child {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .checkbox-label {
+            @include respond-to-min($desktopSize) {
+                margin-left: 0;
+                margin-right: rem(10px);
+            }
+
+            @include respond-to-min($laptopSize) {
+                margin-left: 0;
+                margin-right: rem(20px);
+            }
+
+            img {
+                margin-right: 0;
+                margin-left: rem(5px);
+
+                @include respond-to-min($tabletSize) {
+                    margin-right: 0;
+                    margin-left: rem(8px);
+                }
+            }
+
+            &::before {
+                @include respond-to-min($desktopSize) {
+                    left: auto;
+                    right: rem(-45px);
+                }
+
+                @include respond-to-min($laptopSize) {
+                    left: 0;
+                    right: rem(-55px);
+                }
+            }
+        }
+    }
+}

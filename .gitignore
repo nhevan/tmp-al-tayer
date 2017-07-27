@@ -1,0 +1,7 @@
+.env
+.idea/
+assets/
+bower_components/
+build/
+compiled/
+node_modules/

@@ -1,0 +1,84 @@
+.aftersales-container {
+    .after-sales-main__container {
+        .department-lists {
+            li.orange-top-border {
+                i.fa {
+                    @include rtl() {
+                        left: rem(15px);
+                        right: auto;
+
+                        @include respond-to-min($tabletSize) {
+                            left: rem(20px);
+                            right: auto;
+                        }
+
+                        @include respond-to-min($laptopSize) {
+                            left: rem(50px);
+                            right: auto;
+                        }
+                    }
+                }
+            }
+        }
+
+        .after-sale {
+            &__logo {
+                @include rtl() {
+                    @include respond-to-min($mobileLandscapeSize) {
+                        margin-left: rem(50px);
+                    }
+                }
+            }
+            &__phone {
+                @include rtl() {
+                    margin: rem(0 0 0 5px);
+
+                    @include respond-to-min($mobileLandscapeSize) {
+                        margin: rem(0 0 0 18px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+li.service-list-item {
+    .service-thumbnail {
+
+        @include rtl() {
+            margin-left: rem(10px);
+            margin-right: 0;
+
+            @include respond-to-min($tabletSize) {
+                margin-left: rem(30px);
+            }
+
+            @include respond-to-min($desktopSize) {
+            }
+
+            @include respond-to-min($laptopSize) {
+            }
+        }
+    }
+}
+
+.sidebar-block {
+    .sidebar-block-contents {
+        h2.hotline {
+            @include rtl() {
+                direction: ltr;
+            }
+        }
+        a.readmore {
+            img {
+                @include rtl() {
+                    margin: rem(0 0 0 6px);
+
+                    @include respond-to-min($largeSize) {
+                        margin: rem(0 0 0 10px);
+                    }
+                }
+            }
+        }
+    }
+}

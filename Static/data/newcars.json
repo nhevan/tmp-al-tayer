@@ -1,0 +1,39 @@
+﻿{
+    "items": [
+        {
+            "car-name": "ford",
+            "thumbnail": "/assets/img/new-car1.png",
+            "car-url": "#"
+        },
+        {
+            "car-name": "ford",
+            "thumbnail": "/assets/img/new-car1.png",
+            "car-url": "#"
+        },
+        {
+            "car-name": "ford",
+            "thumbnail": "/assets/img/new-car1.png",
+            "car-url": "#"
+        },
+        {
+            "car-name": "ford",
+            "thumbnail": "/assets/img/new-car1.png",
+            "car-url": "#"
+        },
+        {
+            "car-name": "ford",
+            "thumbnail": "/assets/img/new-car1.png",
+            "car-url": "#"
+        },
+        {
+            "car-name": "ford",
+            "thumbnail": "/assets/img/new-car1.png",
+            "car-url": "#"
+        },
+        {
+            "car-name": "ford",
+            "thumbnail": "/assets/img/new-car1.png",
+            "car-url": "#"
+        }
+    ]
+}

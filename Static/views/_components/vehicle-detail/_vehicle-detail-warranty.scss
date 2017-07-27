@@ -1,0 +1,125 @@
+.vehicle-detail-warranty-container {
+    padding-top: rem(28px);
+    padding-bottom: rem(26px);
+    background: #d8d8d8;
+
+    @include respond-to-min($desktopSize) {
+        padding-left: rem(20px);
+        padding-right: rem(20px);
+    }
+
+    @include respond-to-min($laptopSize) {
+        padding-left: rem(50px);
+        padding-right: rem(50px);
+    }
+
+    .double-row-gutter {
+        @include respond-to-min($tabletSize) {
+            margin-left: rem(-10px);
+            margin-right: rem(-10px);
+        }
+
+        @include respond-to-min($laptopSize) {
+            margin-left: rem(-25px);
+            margin-right: rem(-25px);
+        }
+    }
+
+    .double-column-gutter {
+        @include respond-to-min($tabletSize) {
+            &:nth-child(2n+3) {
+                clear: left;
+            }
+
+            padding-right: rem(10px);
+            padding-left: rem(10px);
+        }
+
+        @include respond-to-min($desktopSize) {
+            &:nth-child(2n+3) {
+                clear: none;
+            }
+        }
+
+        @include respond-to-min($laptopSize) {
+            padding-left: rem(25px);
+            padding-right: rem(25px);
+        }
+
+        &:nth-child(1):nth-last-child(2) {
+            .vehicle-warranty-short-description {
+                p {
+                    @include respond-to-min($tabletSize) {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        &:last-child {
+            .vehicle-warranty-short-description {
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .vehicle-warranty-block {
+            width: 100%;
+        }
+
+        .vehicle-warranty-block-title {
+            @include latoBlack();
+            font-size: rem(15px);
+            line-height: rem(20px);
+            color: #131313;
+            margin: rem(0 0 10px);
+            padding: 0;
+            text-transform: uppercase;
+            letter-spacing: rem(1px);
+
+            @include respond-to-min($tabletSize) {
+                font-size: rem(20px);
+                line-height: rem(24px);
+                margin: rem(0 0 18px);
+            }
+
+            @include respond-to-min($desktopSize) {
+                font-size: rem(16px);
+                line-height: rem(20px);
+            }
+        }
+
+        .thumbnail {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .vehicle-warranty-short-description {
+            p {
+                @include latoNormal();
+                color: $grayText;
+                font-size: rem(12px);
+                line-height: rem(20px);
+                margin: rem(0 0 18px);
+                padding: rem(5px 0 0);
+
+                @include respond-to-min($tabletSize) {
+                    font-size: rem(14px);
+                    line-height: rem(22px);
+                    margin: rem(0 0 28px);
+                    padding: rem(15px 0 0);
+                }
+
+                @include respond-to-min($desktopSize) {
+                    font-size: rem(14px);
+                    line-height: rem(22px);
+                    margin: rem(0);
+                    padding: rem(15px 0 0);
+                }
+            }
+        }
+    }
+}

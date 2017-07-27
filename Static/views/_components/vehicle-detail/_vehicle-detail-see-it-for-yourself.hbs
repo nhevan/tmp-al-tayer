@@ -1,0 +1,24 @@
+
+<div class="container-fluid double-container-gutter vehicle-detail-see-it-for-yourself">
+    <div class="row double-row-gutter">
+        {{#if vehicle-detail.seeItYourself.youtubePreview}}
+        <div class="col-xs-12 col-sm-12 col-md-6 double-column-gutter">
+            <h2>{{vehicle-detail.seeItYourself.title}}</h2>
+            <p>{{vehicle-detail.seeItYourself.description}}</p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 double-column-gutter">
+            <div class="vehicle-detail-video-container" data-require="base/views/video_youtube">
+                <img src="{{vehicle-detail.seeItYourself.youtubePreview}}" alt="" />
+                <a class="vehicle-detail-video-play-button" href="{{vehicle-detail.seeItYourself.youtube}}" title="" data-youtube-button="">
+                    <span class="video-play-arrow">&nbsp;</span>
+                </a>
+            </div>
+        </div>
+        {{else}}
+        <div class="col-xs-12 double-column-gutter">
+            <h2>{{vehicle-detail.seeItYourself.title}}</h2>
+            <p>{{vehicle-detail.seeItYourself.description}}</p>
+        </div>
+        {{/if}}
+    </div>
+</div>

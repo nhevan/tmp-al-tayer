@@ -1,0 +1,34 @@
+---
+title: "Events list contents page"
+---
+<div class="container-fluid double-container-gutter events-list-container">
+    <div class="row double-row-gutter events-list-filter-container" data-require="base/modules/custom_select_wrapper">
+        <div class="col-xs-12 col-md-4 double-column-gutter events-list-filter">
+            {{> select-item events-list-filter.price}}
+        </div>
+        <div class="col-xs-12 col-md-4 double-column-gutter events-list-filter">
+            {{> select-item events-list-filter.events}}
+        </div>
+        <div class="col-xs-12 col-md-4 double-column-gutter price-filter">
+            {{> select-item events-list-filter.price}}
+        </div>
+    </div>
+    {{#each events-list.items}}
+    <div class="row double-row-gutter event-item">
+        <div class="col-xs-12 col-sm-3 double-column-gutter event-thumbnail">
+            <img src="{{thumbnail}}" alt="" />
+        </div>
+        <div class="col-xs-12 col-sm-9 double-column-gutter event-contents">
+            <h3 class="event-title"><a href="{{permalink}}">{{event-title}}</a></h3>
+            <h4 class="estimated-date">{{estimated-date}}</h4>
+            <p>{{descriptions}}</p>
+            <a href="{{permalink}}" class="readmore">READ MORE</a>
+        </div>
+    </div>
+    {{/each}}
+    {{> _event-item-not-found }}
+    <div class="paginations-container">
+        {{> paginations}}
+    </div>
+</div>
+

@@ -1,0 +1,20 @@
+﻿{
+    "items": [
+        {
+            "text": "Escape E202 XLS CLTH",
+            "iconButton1": "/assets/img/icon_enquiry.png",
+            "textButton1": "Send an<br/>enquiry",
+            "urlButton1": "#",
+            "iconButton2": "/assets/img/icon_call.png",
+            "textButton2": "Contact<br/>Dealer",
+            "urlButton2": "#",
+            "iconButton3": "/assets/img/icon_finance.png",
+            "textButton3": "Finance &<br/>Insurance",
+            "urlButton3": "#",
+            "largeImage": "/assets/img/preowned-detail-slider-image.jpg",
+            "desktopImage": "/assets/img/preowned-detail-slider-image.jpg",
+            "tabletImage": "/assets/img/preowned-detail-slider-image.jpg",
+            "mobileImage": "/assets/img/preowned-detail-slider-image.jpg"
+        }
+    ]
+}

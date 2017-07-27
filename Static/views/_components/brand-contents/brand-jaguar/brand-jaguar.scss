@@ -1,0 +1,89 @@
+.brand-jaguar-container {
+    .overview-content-block {
+        .thumbnail {
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            //@include latoBold();
+            font-family: "Gotham A", "Gotham B";
+            font-weight: 700;
+            font-size: rem(20px);
+            line-height: 1;
+            text-transform: uppercase;
+            display: block;
+            margin: rem(0 0 10px);
+            text-align: center;
+            color: #090909;
+            letter-spacing: rem(1px);
+
+            @include respond-to-min($tabletSize) {
+                font-size: rem(18px);
+            }
+
+            @include respond-to-min($largeSize) {
+                font-size: rem(20px);
+            }
+
+            &:nth-child(2) {
+                font-size: rem(14px);
+                color: #9e1b32;
+            }
+        }
+    }
+
+
+    .brand-tabs-contents.tab-contents {
+        .text-contents-row {
+            p {
+                font-family: "Gotham A", "Gotham B";
+                font-weight: 400;
+                font-style: normal;
+            }
+        }
+    }
+
+    .brand-model {
+        .brand-model__item {
+            &__text-container {
+                h3 {
+                    font-family: "Gotham A", "Gotham B";
+                    font-weight: 700;
+                    font-style: normal;
+                }
+
+                p {
+                    font-family: "Gotham A", "Gotham B";
+                    font-weight: 400;
+                    font-style: normal;
+                }
+            }
+
+            &__price {
+                span {
+                    font-family: "Gotham A", "Gotham B";
+                    font-weight: 400;
+                    font-style: normal;
+
+                    &.price {
+                        font-family: "Gotham A", "Gotham B";
+                        font-weight: 700;
+                        font-style: normal;
+                    }
+                }
+            }
+        }
+    }
+
+    .brand-tab__container_model_brochure {
+        .brand-model__item {
+            .brand-model__item__text-container {
+                h3, a.download-brochure {
+                    font-family: "Gotham A", "Gotham B";
+                    font-weight: 400;
+                    font-style: normal;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+﻿{
+    "logo": "/assets/img/brand-maserati.png",
+    "items": [
+        {
+            "text": "levante",
+            "data-target": "overview-tab-levante",
+            "classes": "active",
+            "isModel":  false
+        },
+        {
+            "text": "the new quattroporte",
+            "data-target": "models-tab-contents",
+            "classes": "",
+            "isModel":  true
+        },
+        {
+            "text": "ghibli",
+            "data-target": "overview-tab-ghibli",
+            "classes": "",
+            "isModel":  false
+        }
+    ]
+}

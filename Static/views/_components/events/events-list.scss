@@ -1,0 +1,108 @@
+#event-listing-container {
+    .header-slider {
+        &.owl-theme .owl-carousel .owl-nav {
+            display: none;
+        }
+        .header-slider__item__video {
+            display: block;
+        }
+    }
+}
+.events-list-filter-container {
+    margin-bottom: rem(40px);
+
+    .events-list-filter {
+        margin-bottom: rem(20px);
+
+        @include respond-to-min($desktopSize) {
+            margin-bottom: rem(0px);
+        }
+    }
+}
+
+.events-list-container {
+    background: #efefef;
+
+    &.container-fluid.double-container-gutter {
+        padding-top: rem(40px);
+        padding-bottom: rem(40px);
+    }
+
+    .event-item {
+        margin-bottom: rem(40px);
+
+        p {
+            @include arial();
+            font-size: rem(16px);
+            line-height: rem(26px);
+            color: #6a6a6a;
+            margin: 0;
+            padding: 0;
+        }
+
+        .event-thumbnail {
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            @include respond-to-min($desktopSize) {
+                width: 27%;
+            }
+
+            @include respond-to-max(767px) {
+                margin-bottom: rem(30px);
+            }
+        }
+
+        .event-contents {
+            .event-title {
+                margin: 0 0 15px;
+
+                a {
+                    @include latoBold();
+                    font-size: rem(20px);
+                    color: $blueTextColor;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .estimated-date {
+                margin: 0 0 15px;
+                @include latoNormal();
+                font-size: rem(18px);
+                color: #6a6a6a;
+                text-transform: uppercase;
+            }
+
+            p {
+                @include arial();
+                font-size: rem(16px);
+                line-height: rem(26px);
+                margin: 0 0 15px;
+                color: #6a6a6a;
+            }
+
+            .readmore {
+                @include arial();
+                font-size: rem(16px);
+                color: #003977;
+                text-transform: uppercase;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            @include respond-to-min($desktopSize) {
+                width: 73%;
+                padding-left: rem(20px);
+            }
+        }
+    }
+}

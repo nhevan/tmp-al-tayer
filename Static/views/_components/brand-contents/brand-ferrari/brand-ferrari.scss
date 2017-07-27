@@ -1,0 +1,113 @@
+.brand-ferrari-container {
+    .overview-content-block {
+        .thumbnail {
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: #000;
+            //@include arial();
+            font-family: 'Georgia W01';
+            font-weight: normal;
+            line-height: 1;
+            font-style: italic;
+            text-transform: uppercase;
+            display: block;
+            margin: 0;
+            font-size: rem(15px);
+
+            @include respond-to-min($tabletSize) {
+                font-size: rem(18px);
+            }
+
+            @include respond-to-min($largeSize) {
+                font-size: rem(21.5px);
+            }
+
+            &:nth-child(1) {
+                margin-bottom: 5px;
+            }
+
+            &:nth-child(2) {
+                color: #de0f0d;
+            }
+        }
+    }
+
+    .brand-tabs-contents.tab-contents {
+        .text-contents-row {
+            p {
+                font-family: 'Georgia W01';
+                font-style: normal;
+            }
+        }
+    }
+
+    .brand-model {
+        .brand-model__item {
+            &__text-container {
+                h3 {
+                    font-family: 'Georgia W01';
+                    font-weight: 700;
+                    font-style: normal;
+                }
+
+                p {
+                    font-family: 'Georgia W01';
+                    font-style: normal;
+                }
+            }
+
+            &__price {
+                span {
+                    font-family: 'Georgia W01';
+                    font-style: normal;
+
+                    &.price {
+                        font-family: 'Georgia W01';
+                        font-weight: 700;
+                        font-style: normal;
+                    }
+                }
+            }
+        }
+    }
+
+    .brand-tab__container_model_brochure {
+        .brand-model__item {
+            &__text-container {
+                h3 {
+                    font-family: 'Georgia W01';
+                    font-weight: 700;
+                    font-style: normal;
+                }
+
+                p {
+                    font-family: 'Georgia W01';
+                    font-style: normal;
+                }
+            }
+
+            &__price {
+                span {
+                    font-family: 'Georgia W01';
+                    font-style: normal;
+
+                    &.price {
+                        font-family: 'Georgia W01';
+                        font-weight: 700;
+                        font-style: normal;
+                    }
+                }
+            }
+
+            .brand-model__item__text-container {
+                h3, a.download-brochure {
+                    font-family: 'Georgia W01';
+                    font-weight: normal;
+                    font-style: normal;
+                }
+            }
+        }
+    }
+}

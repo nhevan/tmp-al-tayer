@@ -1,0 +1,112 @@
+@import "_search-results-ar";
+
+.search-filter-container {
+    display: none;
+
+    @include respond-to-min($desktopSize) {
+        display: block;
+    }
+}
+
+.search-results-list-container {
+    background: #efefef;
+
+    .search-results-list-filter-container {
+        margin-bottom: rem(40px);
+
+        .items-per-page-filter {
+            float: right;
+            border: rem(1px solid #c8c8c8);
+            background: #fff;
+
+            span {
+                @include inline_block();
+                @include arial();
+                font-size: rem(16px);
+                color: #6a6a6a;
+                padding-left: rem(18px);
+            }
+
+            .input-selection-container {
+                @include inline_block();
+                border: 0;
+                width: 80px;
+
+                select {
+                    padding-left: 0;
+                    border: none;
+                }
+
+                .selected-label {
+                    padding: rem(0 0 0 4px);
+                    border: none;
+                    line-height: rem(60px);
+                }
+
+                ul {
+                    left: auto;
+                    right: -1px;
+                    text-align: center;
+                    border-top: rem(1px solid #c8c8c8);
+                }
+            }
+        }
+
+        .search-results-summary {
+            padding: rem(20px 0);
+            @include arial();
+            font-size: rem(16px);
+            color: #6a6a6a;
+            display: block;
+
+            .search-number-result {
+                font-weight: bold;
+            }
+        }
+    }
+
+    &.container-fluid.double-container-gutter {
+        padding-top: rem(40px);
+        padding-bottom: rem(40px);
+    }
+
+    .search-result-item {
+        margin-bottom: rem(40px);
+
+        .search-result-contents {
+            .search-result-title {
+                margin: 0 0 15px;
+
+                a {
+                    @include latoBlack();
+                    font-size: rem(20px);
+                    color: $blueTextColor;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            p {
+                @include arial();
+                font-size: rem(16px);
+                line-height: rem(26px);
+                margin: 0 0 15px;
+                color: #6a6a6a;
+            }
+
+            .readmore {
+                @include arial();
+                font-size: rem(16px);
+                color: #003977;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

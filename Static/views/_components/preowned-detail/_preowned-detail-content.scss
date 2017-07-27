@@ -1,0 +1,54 @@
+.preowned-detail-container {
+    background-color: #efefef;
+    padding-top: rem(30px);
+    padding-bottom: rem(25px);
+
+    @include respond-to-min($tabletSize) {
+        padding-top: rem(40px);
+        padding-bottom: rem(50px);
+    }
+
+    .preowned-tab-row {
+        @extend .tab-row;
+        margin-bottom: rem(20px);
+
+        @include respond-to-min($tabletSize) {
+            margin-bottom: rem(42px);
+        }
+
+
+        .preowned-tab-item {
+            @extend .tab-item;
+
+            span {
+                @include respond-to-max($tabletSize) {
+                    @include both-center(absolute);
+                }
+
+                @include respond-to-min($tabletSize) {
+                    max-width: 90%;
+                    position: relative;
+                    top: auto;
+                    left: auto;
+                    transform: none;
+                }
+
+                @include respond-to-min($desktopSize) {
+                    max-width: 96%;
+                }
+            }
+        }
+    }
+}
+
+.preowned-detail-list-container {
+    display: none;
+
+    &.active {
+        display: block;
+    }
+
+    p {
+        @extend .text-paragraph;
+    }
+}

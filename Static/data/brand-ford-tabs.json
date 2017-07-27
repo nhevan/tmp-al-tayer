@@ -1,0 +1,35 @@
+﻿{
+    "logo": "/assets/img/brand-ford.jpg",
+    "items": [
+        {
+            "text": "Mustang",
+            "data-target": "mustang-tab-contents",
+            "classes": "active",
+            "isModel":  false
+        },
+        {
+            "text": "F-150",
+            "data-target": "f150-tab-contents",
+            "classes": "",
+            "isModel":  true
+        },
+        {
+            "text": "F-150 Raptor",
+            "data-target": "f150-r-tab-contents",
+            "classes": "",
+            "isModel":  false
+        },
+        {
+            "text": "Edge",
+            "data-target": "edge-tab-contents",
+            "classes": "",
+            "isModel":  false
+        },
+        {
+            "text": "Explorer",
+            "data-target": "explorer-tab-contents",
+            "classes": "",
+            "isModel":  false
+        }
+    ]
+}

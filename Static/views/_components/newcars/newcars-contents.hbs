@@ -1,0 +1,22 @@
+---
+title: "New Cars contents page"
+---
+<div class="container-fluid double-container-gutter newcars-container no-slider-padding">
+    <div class="newcars-contents row double-row-gutter">
+        <div class="col-xs-12 double-column-gutter">
+            <h1 class="big-heading-group">New Cars</h1>
+            <p>This is the New Cars description text lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse ut purus. Suspendisse tristique. Cras et sem at odio porttitor mattis. Donec dignissim ornare tortor. This is the New Cars description text lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+    <div class="row double-row-gutter">
+        {{#each newcars.items}}
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 double-column-gutter newcar-item">
+            <div class="newcar-thumbnail orange-top-border">
+                <a href="{{car-url}}"><img src="{{thumbnail}}" alt="" /></a>
+            </div>
+            <h3 class="carname"><a href="{{car-url}}">{{car-name}}</a></h3>
+        </div>
+        {{/each}}
+    </div>
+</div>
+

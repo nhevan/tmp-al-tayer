@@ -1,0 +1,139 @@
+---
+title: "Finance and Insurance top content"
+---
+<div class="finance-insurance-form-container" data-require="base/tabs-select">
+    <div class="finance-insurance__tab-row">
+        <a href="#" class="finance-insurance__tab-column active" data-target="insurance-form">
+            <span>Renew Insurance</span>
+        </a>
+        <a href="#" class="finance-insurance__tab-column" data-target="finance-form">
+            <span>Finance Enquiry</span>
+        </a>
+    </div>
+
+    <div class="container-fluid double-container-gutter">
+        <form>
+            <div class="finance-insurance-form-list active" data-content="insurance-form" data-require="base/modules/custom_select_wrapper">
+                <div class="row double-row-gutter">
+                    <div class="col-xs-12 double-column-gutter">
+                        <h3 class="header-form-group">
+                            <img src="/assets/img/icon_car.png" alt="" />
+                            Vehicle Information
+                        </h3>
+                    </div>
+                    <div class="col-xs-12 double-column-gutter">
+                        <div class="col-xs-12 col-sm-6">
+                            {{> select-item finance_insurance.vehicle_brand}}
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            {{> select-item finance_insurance.vehicle_model}}
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            {{> select-item finance_insurance.vehicle_type}}
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            {{> select-item finance_insurance.vehicle_value}}
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 double-column-gutter">
+                        <h3 class="header-form-group">
+                            <img src="/assets/img/icon_personal.png" alt="" />
+                            Personal Information
+                        </h3>
+                    </div>
+                    <div class="col-xs-12 double-column-gutter">
+                        <div class="col-xs-12 col-sm-6">
+                            {{> input-text-item finance_insurance.first_name}}
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            {{> input-text-item finance_insurance.last_name}}
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            {{> input-datepicker finance_insurance.date_birth}}
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            {{> select-item finance_insurance.select_city}}
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="group-two-input">
+                                {{> select-item finance_insurance.select_phone}}
+                                {{> input-text-item finance_insurance.phone_input}}
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            {{> input-text-item finance_insurance.email_address}}
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            {{> select-item finance_insurance.driving_experience}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="finance-insurance-form-list" data-content="finance-form">
+                <div class="row double-row-gutter">
+                    <div class="col-xs-12 double-column-gutter">
+                        <h3 class="header-form-group">
+                            <img src="/assets/img/icon_car.png" alt="" />
+                            Vehicle Information
+                        </h3>
+                    </div>
+                    <div class="col-xs-12 double-column-gutter">
+                        <div class="col-xs-12 col-sm-6">
+                            {{> select-item finance_insurance.vehicle_brand}}
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            {{> select-item finance_insurance.vehicle_model}}
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 double-column-gutter">
+                        <h3 class="header-form-group">
+                            <img src="/assets/img/icon_personal.png" alt="" />
+                            Personal Information
+                        </h3>
+                    </div>
+                    <div class="col-xs-12 double-column-gutter">
+                        <div class="col-xs-12 col-sm-6">
+                            {{> input-text-item finance_insurance.first_name}}
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            {{> input-text-item finance_insurance.last_name}}
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            {{> input-datepicker finance_insurance.date_birth}}
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            {{> select-item finance_insurance.select_city}}
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="group-two-input">
+                                {{> select-item finance_insurance.select_phone}}
+                                {{> input-text-item finance_insurance.phone_input}}
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            {{> input-text-item finance_insurance.email_address}}
+                        </div>
+                        <div class="col-xs-12 col-without-padding-horizontal">
+                            {{> textarea-item finance_insurance.additional_remark}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row double-row-gutter finance-insurance-form-recaptcha">
+                <div class="col-xs-12 double-column-gutter">
+                    <h3 class="header-form-group">
+                        <img src="/assets/img/icon_verification.png" alt="" />
+                        Verification Code
+                    </h3>
+                    <div class="g-recaptcha" data-sitekey="6LfKMhATAAAAABnDguv8544m_H8P1e-mhs8zGxde"></div>
+
+                    <button class="button-common" type="Submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

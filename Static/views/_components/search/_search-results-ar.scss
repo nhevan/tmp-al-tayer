@@ -1,0 +1,30 @@
+
+.search-results-list-container {
+    .search-results-list-filter-container {
+        .items-per-page-filter {
+            @include rtl() {
+                float: left;
+
+                span {
+                    padding-left: rem(0px);
+                    padding-right: rem(18px);
+                }
+
+                .input-selection-container {
+                    select {
+                        padding-right: 0;
+                    }
+
+                    .selected-label {
+                        padding: rem(0 4px 0 0);
+                    }
+
+                    ul {
+                        right: auto;
+                        left: -1px;
+                    }
+                }
+            }
+        }
+    }
+}

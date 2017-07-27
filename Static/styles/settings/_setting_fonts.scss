@@ -1,0 +1,75 @@
+﻿@font-face {
+  font-family: 'FontAwesome';
+  font-family: 'FontAwesome';
+  src: url('/assets/fonts/fontawesome-webfont.eot?v=4.4.0');
+  src: url('/assets/fonts/fontawesome-webfont.eot?#iefix&v=4.4.0') format('embedded-opentype'), url('/assets/fonts/fontawesome-webfont.woff2?v=4.4.0') format('woff2'), url('/assets/fonts/fontawesome-webfont.woff?v=4.4.0') format('woff'), url('/assets/fonts/fontawesome-webfont.ttf?v=4.4.0') format('truetype'), url('/assets/fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+    font-family: 'latoregular';
+    src: url('/assets/fonts/lato-regular-webfont.eot');
+    src: url('/assets/fonts/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/lato-regular-webfont.woff2') format('woff2'),
+         url('/assets/fonts/lato-regular-webfont.woff') format('woff'),
+         url('/assets/fonts/lato-regular-webfont.ttf') format('truetype'),
+         url('/assets/fonts/lato-regular-webfont.svg#latoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'latolight';
+    src: url('/assets/fonts/lato-light-webfont.eot');
+    src: url('/assets/fonts/lato-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/lato-light-webfont.woff2') format('woff2'),
+         url('/assets/fonts/lato-light-webfont.woff') format('woff'),
+         url('/assets/fonts/lato-light-webfont.ttf') format('truetype'),
+         url('/assets/fonts/lato-light-webfont.svg#latolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'latobold';
+    src: url('/assets/fonts/lato-bold-webfont.eot');
+    src: url('/assets/fonts/lato-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/lato-bold-webfont.woff2') format('woff2'),
+         url('/assets/fonts/lato-bold-webfont.woff') format('woff'),
+         url('/assets/fonts/lato-bold-webfont.ttf') format('truetype'),
+         url('/assets/fonts/lato-bold-webfont.svg#latobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'latoblack';
+    src: url('/assets/fonts/lato-black-webfont.eot');
+    src: url('/assets/fonts/lato-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/fonts/lato-black-webfont.woff2') format('woff2'),
+         url('/assets/fonts/lato-black-webfont.woff') format('woff'),
+         url('/assets/fonts/lato-black-webfont.ttf') format('truetype'),
+         url('/assets/fonts/lato-black-webfont.svg#latoblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@mixin latoLight(){
+    font-family: 'latolight', sans-serif;
+    font-weight: 300;
+}
+
+@mixin latoNormal(){
+    font-family: 'latoregular', sans-serif;
+    font-weight: 400;
+}
+
+@mixin latoBold(){
+    font-family: 'latobold', sans-serif;
+    font-weight: 700;
+}
+
+@mixin latoBlack(){
+    font-family: 'latoblack', sans-serif;
+    font-weight: 900;
+}
+
+@mixin arial(){
+    font-family: Arial, Helvetica, sans-serif;
+}

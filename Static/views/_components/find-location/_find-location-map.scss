@@ -1,0 +1,170 @@
+@import "_find-location-map_ar";
+
+.find-location-map-container {
+    border: rem(1px solid #c1c1c1);
+    height: rem(185px);
+    @include respond-to-min($tabletSize) {
+        height: rem(640px);
+        margin-bottom: rem(40px);
+    }
+}
+
+.infowindow {
+    &__container {
+        background-color: #fff;
+        padding: rem(20px 25px);
+        position: relative;
+        overflow: visible;
+        border-radius: rem(10px 10px 10px 10px);
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+        display: inline-block;
+        max-width: rem(250px);
+
+        @include respond-to-min($tabletSize) {
+            max-width: rem(400px);
+        }
+    }
+
+    &__marker {
+        position: absolute;
+        display: block;
+        left: 0px;
+        top: 0px;
+        transform: translateX(-50%);
+        cursor: pointer;
+        max-width: auto !important;
+    }
+
+    &__header {
+        color: $orangeBorder;
+        font-size: rem(12px);
+        line-height: rem(20px);
+        margin: rem(0 0 4px);
+        padding: 0;
+        @include latoBold();
+
+        @include respond-to-min($tabletSize) {
+            font-size: rem(16px);
+            line-height: rem(25px);
+            margin: rem(0 0 8px);
+        }
+    }
+
+    &__content {
+        &__watch {
+            color: #6a6a6a;
+            @include arial();
+            background: url('/assets/img/infowindow_watch.png') no-repeat;
+            background-size: rem(auto 12px);
+            min-height: rem(12px);
+            margin-bottom: rem(4px);
+            font-size: rem(10px);
+            line-height: rem(14px);
+            padding-left: rem(22px);
+			
+            @include respond-to-min($tabletSize) {
+                font-size: rem(14px);
+                line-height: rem(18px);
+                background-size: rem(auto 24px);
+                min-height: rem(24px);
+                margin-bottom: rem(8px);
+                padding-left: rem(45px);
+            }
+        }
+
+        &__phone {
+            text-decoration: none;
+            display: block;
+            color: #6a6a6a;
+            background: url('/assets/img/infowindow_phone.png') no-repeat left center;
+            background-size: rem(auto 10px);
+            min-height: rem(10px);
+            @include arial();
+            font-size: rem(10px);
+            line-height: rem(14px);
+            padding-left: rem(22px);
+
+            @include respond-to-min($tabletSize) {
+                font-size: rem(14px);
+                line-height: rem(18px);
+                background-size: rem(auto 20px);
+                min-height: rem(20px);
+                padding-left: rem(45px);
+            }
+        }
+        &__direction, &__direction-af {
+            text-decoration: underline;
+            display: block;
+            color: #6a6a6a;
+            min-height: rem(10px);
+            @include arial();
+            font-size: rem(10px);
+            line-height: rem(14px);
+            padding-left: rem(22px);
+            margin-top: rem(10px);
+
+            @include respond-to-min($tabletSize) {
+                font-size: rem(14px);
+                line-height: rem(18px);
+                min-height: rem(20px);
+                padding-left: rem(45px);
+            }
+        }
+        &__direction-af {
+            display: none;
+        }
+
+        p {
+            padding: 0;
+            margin: 0;
+            @include arial();
+            font-size: rem(10px);
+            line-height: rem(14px);
+
+            @include respond-to-min($tabletSize) {
+                font-size: rem(14px);
+                line-height: rem(18px);
+            }
+        }
+    }
+
+    &__close {
+        position: absolute;
+        top: rem(0px);
+        right: rem(0px);
+        display: block;
+        width: rem(30px);
+        height: rem(30px);
+        background: url('/assets/img/close_info.png') no-repeat center center;
+        cursor: pointer;
+    }
+}
+
+.marker {
+    &__container {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+        width: rem(22px);
+        height: rem(50px);
+
+        img {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+/*.gm-style-iw {
+    background-color: #fff;
+    border-radius: rem(10px 10px 10px 10px);
+    overflow: visible !important;
+    top: 0px !important;
+    left: 0px !important;
+    opacity: 0;
+}*/

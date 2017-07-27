@@ -1,0 +1,23 @@
+<div class="col-xs-6 col-sm-4 col-md-15 quicklink-item__column">
+    {{#if this.isLightBox}}
+    <a href="http://cld.bz/users/trial-GVESD6r/Sass-for-Web-Designers" class="quicklink-item__container fancybox.iframe" data-require="base/views/fancy_box">
+        <img src="{{this.icon}}" alt="" />
+        <span class="quicklink-item__text-container">
+            <span>
+                {{this.lineOne}}<br/>
+                {{this.lineTwo}}
+            </span>
+        </span>
+    </a>
+    {{else}}
+    <a href="#" class="quicklink-item__container">
+        <img src="{{this.icon}}" alt="" />
+        <span class="quicklink-item__text-container">
+            <span>
+                {{this.lineOne}}<br/>
+                {{this.lineTwo}}
+            </span>
+        </span>
+    </a>
+    {{/if}}
+</div>

@@ -1,0 +1,60 @@
+
+<div class="container-fluid double-container-gutter vehicle-specification-container" data-require="base/tabs-select">
+    <h2>{{vehicle-detail.specification.header}}</h2>
+    <div class="row vehicle-tab-container">
+        {{#each vehicle-detail.specification.tab}}
+        <div class="col-xs-6 col-sm-3 vehicle-tab-column">
+            {{#if this.isActive}}
+            <a href="#" class="vehicle-specification-tab-item active" data-target="{{this.data}}">
+                <span>{{this.text}}</span>
+            </a>
+            {{else}}
+            <a href="#" class="vehicle-specification-tab-item" data-target="{{this.data}}">
+                <span>{{this.text}}</span>
+            </a>
+            {{/if}}
+        </div>
+        {{/each}}
+    </div>
+
+    <div class="row vehicle-tab-container vehicle-tab-container-mobile" data-require="base/tabs-mobile">
+        <nav>
+            <ul class="cd-tabs-navigation">
+                {{#each vehicle-detail.specification.tab}}
+                <li>
+                    {{#if this.isActive}}
+                    <a href="#" class="vehicle-specification-tab-item active" data-target="{{this.data}}">
+                        <span>{{this.text}}</span>
+                    </a>
+                    {{else}}
+                    <a href="#" class="vehicle-specification-tab-item" data-target="{{this.data}}">
+                        <span>{{this.text}}</span>
+                    </a>
+                    {{/if}}
+                </li>
+                {{/each}}
+            </ul>
+        </nav>
+    </div>
+    <div>
+        {{#each vehicle-detail.specification.list}}
+        <div class="vehicle-specification-list-container {{#if this.isActive}}active{{/if}}" data-content="{{this.data}}">
+            <div class="row double-row-gutter">
+                {{#each this.items}}
+                <div class="col-xs-12 col-sm-6" data-require="base/views/show_more">
+                    <img class="orange-top-border" src="{{this.image}}" alt="" />
+                    <h4>{{this.title}}</h4>
+                    <div class="short-description">
+                        <p>{{this.description}}</p>
+                    </div>
+                    <div class="long-description">
+                        <p>{{this.description}}</p>
+                    </div>
+                    <span class="vehicle-detail__show-more">More</span>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>

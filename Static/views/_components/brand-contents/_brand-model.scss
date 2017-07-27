@@ -1,0 +1,456 @@
+@import "_brand-model_ar";
+
+.brand-container {
+    .brand-model-filter {
+        padding-top: rem(20px);
+        padding-bottom: rem(20px);
+
+        .row {
+            margin-left: rem(-20px);
+            margin-right: rem(-20px);
+
+            @include respond-to-min($tabletSize) {
+                margin-left: rem(-25px);
+                margin-right: rem(-25px);
+            }
+        }
+
+        .col-sm-6 {
+            @include respond-to-min($tabletSize) {
+                padding-left: rem(25px);
+                padding-right: rem(25px);
+            }
+
+            @include respond-to-min($desktopSize) {
+                /*padding-left: rem(30px);
+                padding-right: rem(30px);*/
+            }
+        }
+    }
+
+    .brand-model {
+        margin-left: rem(-20px);
+        margin-right: rem(-20px);
+
+        @include respond-to-min($tabletSize) {
+            margin-left: rem(-10px);
+            margin-right: rem(-10px);
+        }
+
+        @include respond-to-min($desktopSize) {
+            margin-left: rem(-25px);
+            margin-right: rem(-25px);
+        }
+    }
+}
+
+.brand-model-filter {
+    background-color: #fff;
+    position: relative;
+    border-bottom: rem(1px solid #dfe0e5);
+    z-index: 10;
+
+    @at-root {
+        .brand-tab__container_model & {
+            @include respond-to-min($desktopSize) {
+                opacity: 0;
+                animation: slide-from-top-auto 0.25s 1s forwards;
+
+                @include old-ie() {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .col-xs-12 {
+        padding-left: rem(20px);
+        padding-right: rem(20px);
+
+        @include respond-to-min($tabletSize) {
+            padding-left: rem(25px);
+            padding-right: rem(25px);
+        }
+    }
+
+    .brand-model-filter__dropdown-container {
+        @include respond-to-min($tabletSize) {
+            left: rem(25px);
+            right: rem(156px);
+            height: rem(50px);
+            @include vertical-align(absolute);
+        }
+
+        .row {
+            margin-left: rem(-10px);
+            margin-right: rem(-10px);
+
+            .col-md-6 {
+                padding-left: rem(10px);
+                padding-right: rem(10px);
+            }
+        }
+    }
+
+    button {
+        background-color: #003977;
+        border-radius: 3px;
+        font-size: rem(12px);
+        line-height: rem(12px);
+        color: #fff;
+        @include latoBlack();
+        display: inline-block;
+        float: right;
+        text-transform: uppercase;
+        border: 0px;
+        outline: none;
+        width: 100%;
+        text-align: center;
+        padding: rem(9px 0);
+        border: 1px solid transparent;
+
+        &:hover {
+            @extend %blue_button_hover_state;
+        }
+
+        @include respond-to-min($tabletSize) {
+            width: rem(112px);
+            padding: rem(17px 30px);
+        }
+    }
+
+    &__dropdown {
+        position: relative;
+        height: rem(30px);
+        margin: rem(0 0 20px);
+
+        @include respond-to-min($tabletSize) {
+            height: rem(50px);
+            margin: rem(0);
+        }
+
+        .common-select {
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            border: rem(1px solid #c8c8c8);
+            outline: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            color: #6a6a6a;
+            @include arial();
+            font-size: rem(12px);
+            padding: rem(0 10px);
+
+            @include respond-to-min($tabletSize) {
+                font-size: rem(16px);
+                padding: rem(0 20px);
+            }
+
+            &::-ms-expand {
+                display: none;
+            }
+        }
+
+        select {
+            @extend .common-select;
+            background: url('/assets/img/select_arrow.png') no-repeat right 10px center;
+            background-size: auto 4px;
+            padding: rem(0 6px);
+
+            @include respond-to-min($tabletSize) {
+                background: url('/assets/img/select_arrow.png') no-repeat right 20px center;
+                background-size: auto;
+                padding: rem(0 16px);
+            }
+
+            &.customized-selected {
+                opacity: 0;
+                pointer-events: none;
+            }
+        }
+
+        .selected-label {
+            @extend .common-select;
+            background: url('/assets/img/select_arrow.png') no-repeat right 10px center;
+            background-size: auto 4px;
+            line-height: rem(28px);
+
+            @include respond-to-min($tabletSize) {
+                background: url('/assets/img/select_arrow.png') no-repeat right 20px center;
+                background-size: auto;
+                line-height: rem(48px);
+            }
+
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            cursor: pointer;
+        }
+
+        .disabled-label {
+            color: #a7a7a7;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            z-index: 10;
+            pointer-events: none;
+            opacity: 0;
+            transform: translate(0, -20px);
+            transition: all 0.25s;
+
+            &.show-select {
+                pointer-events: inherit;
+                opacity: 1;
+                transform: translate(0, 0);
+            }
+
+            li {
+                @extend .common-select;
+                @include verticle-middle();
+                border-top: none;
+                background: #fff;
+                display: block;
+                cursor: pointer;
+
+                &:hover {
+                    background: #f6f6f6;
+                }
+
+                height: rem(35px);
+
+                @include respond-to-min($tabletSize) {
+                    height: rem(55px);
+                }
+            }
+        }
+
+        .selected-option {
+            display: none;
+        }
+    }
+}
+
+.brand-model__item {
+    font-size: 0;
+    overflow: hidden;
+    margin: rem(0 0 20px 0);
+    padding-left: rem(20px);
+    padding-right: rem(20px);
+
+    &:last-child {
+        margin-bottom: rem(13px);
+    }
+
+    @include respond-to-min($tabletSize) {
+        margin: rem(0 0 20px 0);
+    }
+
+    &.col-xs-12 {
+        @include respond-to-min($tabletSize) {
+            padding-left: rem(10px);
+            padding-right: rem(10px);
+
+            &:nth-of-type(2n+3) {
+                clear: left;
+            }
+        }
+
+        @include respond-to-min($desktopSize) {
+            padding-left: rem(25px);
+            padding-right: rem(25px);
+
+            &:nth-of-type(2n+3) {
+                clear: none;
+            }
+
+            &:nth-of-type(3n+4) {
+                clear: left;
+            }
+        }
+    }
+
+
+    a {
+        display: block;
+        text-decoration: none;
+
+        &:hover {
+            @include respond-to-min($desktopSize) {
+                .brand-model__item__image-container__mask {
+                    opacity: 0.4;
+                }
+
+                .brand-model__item__text-container {
+                    background: #fff;
+
+                    h3 {
+                        color: $orangeBorder;
+                    }
+                }
+
+                .brand-model__item__price {
+                    background: #e1e1e1;
+
+                    span {
+                        border-top: rem(1px solid #e1e1e1);
+
+                        &.price {
+                            border: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    p {
+        @include latoNormal();
+        color: $grayText;
+        font-size: rem(14px);
+        line-height: rem(20px);
+        margin: 0;
+        padding: 0;
+    }
+
+    &__image-container {
+        position: relative;
+        width: 100%;
+
+        &__image {
+            width: 100%;
+        }
+
+        &__mask {
+            background: #fff;
+            opacity: 0;
+            position: absolute;
+            z-index: 1;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            transition: all 0.25s;
+        }
+    }
+
+    &__text-container {
+        display: block;
+        width: 100%;
+        padding: rem(0);
+
+        @include respond-to-min($tabletSize) {
+            padding: rem(5px 5% 0);
+        }
+
+        h3 {
+            color: $blueTextColor;
+            padding: 0px;
+            margin: 0px;
+            @include latoBold();
+            text-transform: uppercase;
+            font-size: rem(15px);
+            line-height: rem(28px);
+
+            @include respond-to-min($tabletSize) {
+                font-size: rem(20px);
+                line-height: rem(30px);
+            }
+        }
+
+        p {
+            @include latoNormal();
+            color: $grayText;
+            font-size: rem(14px);
+            line-height: rem(20px);
+            margin: 0;
+            display: none;
+
+            @include respond-to-min($tabletSize) {
+                display: block;
+                padding: rem(0 0 10px);
+            }
+
+            @include respond-to-min($desktopSize) {
+                padding: rem(0 0 14px);
+            }
+        }
+    }
+
+    &__price {
+        width: 100%;
+        padding: 0;
+
+        @include respond-to-min($tabletSize) {
+            padding: 0 5%;
+        }
+
+        span {
+            color: $grayText;
+            margin: 0;
+            padding: 0;
+            display: block;
+            @include latoNormal();
+            border-top: rem(1px solid #cacaca);
+            font-size: rem(12px);
+            line-height: rem(12px);
+            padding: rem(6px 0);
+            letter-spacing: rem(0.5px);
+
+            @include respond-to-min($tabletSize) {
+                font-size: rem(14px);
+                line-height: rem(14px);
+                padding: rem(10px 0);
+            }
+
+            @include respond-to-min($desktopSize) {
+                padding: rem(17px 0);
+            }
+
+            &.price {
+                @include latoBold();
+                color: $orangeBorder;
+                text-transform: uppercase;
+                display: inline-block;
+                border: 0px;
+                padding: 0;
+            }
+        }
+    }
+}
+
+.brand-model-filter .disclaimer-content {
+    color: #6a6a6a;
+    @include arial();
+    font-size: rem(12px);
+    font-style: italic;
+
+    @include respond-to-min($tabletSize) {
+        font-size: rem(16px);
+        padding: rem(20px 25px 0);
+    }
+
+    @include respond-to-min($desktopSize) {
+        padding-left: rem(30px);
+        padding-right: rem(30px);
+    }
+}
+
+.disclaimer-content-detail {
+    color: #6a6a6a;
+    font-size: rem(12px);
+    font-style: italic;
+    font-family: 'latoregular';
+    padding: 0;
+    margin: rem(0 0 20px);
+
+    @include respond-to-min($tabletSize) {
+        font-size: rem(16px);
+    }
+}

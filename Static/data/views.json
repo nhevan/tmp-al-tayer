@@ -1,0 +1,31 @@
+﻿{
+    "paths": [
+        { "id": "Home Page", "path": "Static/compiled/pages/home.html" },
+        { "id": "After Sales", "path": "Static/compiled/pages/aftersales.html" },
+        { "id": "Book Service", "path": "Static/compiled/pages/book_service.html" },
+        { "id": "Book Test Drive", "path": "Static/compiled/pages/book_test_drive.html" },
+        { "id": "Overview Ferrari", "path": "Static/compiled/pages/brand_ferrari_overview.html" },
+        { "id": "Overview Ford", "path": "Static/compiled/pages/brand_ford_overview.html" },
+        { "id": "Overview Landrover", "path": "Static/compiled/pages/brand_landrover_overview.html" },
+        { "id": "Overview Jaguar", "path": "Static/compiled/pages/brand_jaguar_overview.html" },
+        { "id": "Overview Lincoln", "path": "Static/compiled/pages/brand_lincoln_overview.html" },
+        { "id": "Overview Maserati", "path": "Static/compiled/pages/brand_maserati_overview.html" },
+        { "id": "Contact", "path": "Static/compiled/pages/contact.html" },
+        { "id": "Events Details", "path": "Static/compiled/pages/events_details.html" },
+        { "id": "Events Listing", "path": "Static/compiled/pages/events_listing.html" },
+        { "id": "Finance Insurance", "path": "Static/compiled/pages/finance_insurance.html" },
+        { "id": "Find Location", "path": "Static/compiled/pages/find_location.html" },
+        { "id": "Models", "path": "Static/compiled/pages/models.html" },
+        { "id": "Models With Brochure", "path": "Static/compiled/pages/models_brochure.html" },
+        { "id": "Fleet", "path": "Static/compiled/pages/fleet.html" },
+        { "id": "New Cars", "path": "Static/compiled/pages/newcars.html" },
+        { "id": "Pre Owned", "path": "Static/compiled/pages/pre_owned.html" },
+        { "id": "Pre Owned Detail", "path": "Static/compiled/pages/preowned_detail.html" },
+        { "id": "Vehicle Detail", "path": "Static/compiled/pages/vehicle_details.html" },
+        { "id": "Event Detail", "path": "Static/compiled/pages/events_details.html" },
+        { "id": "Search Results", "path": "Static/compiled/pages/search_result.html" },
+        { "id": "Privacy", "path": "Static/compiled/pages/privacy.html" },
+        { "id": "404", "path": "Static/compiled/pages/404.html" },
+        { "id": "500", "path": "Static/compiled/pages/500.html" }
+    ]
+}

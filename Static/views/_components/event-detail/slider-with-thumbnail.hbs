@@ -1,0 +1,39 @@
+<div class="slider-with-thumbnail" data-require="base/views/header_slider_thumbnails">
+    <div id="main-slider" class="owl-theme">
+        <div>
+            {{#each this.items}}
+            <div class="main-slider__item">
+                <picture>
+                    <source media="(min-width: 75rem)" srcset="{{largeImage}}">
+                    <source media="(min-width: 62rem)" srcset="{{desktopImage}}">
+                    <source media="(min-width: 48rem)" srcset="{{tabletImage}}">
+                    <img class="header-slider__item__image-preview" src="{{mobileImage}}" alt="" />
+                </picture>
+                {{#if this.videoMp4}}
+                <div class="header-slider__item__video">
+                    <video>
+                        <source src="{{videoMp4}}" type='video/mp4'>
+                        <source src="{{videoWebm}}" type='video/webm'>
+                        <source src="{{videoOgg}}" type="video/ogg">
+                    </video>
+                </div>
+                {{/if}}
+            </div>
+            {{/each}}
+        </div>
+    </div>
+    <div id="thumbnail-slider" class="owl-theme hidden">
+        <div>
+            {{#each this.thumbnails}}
+            <div class="thumbnail-slider__item">
+                <picture>
+                    <source media="(min-width: 75rem)" srcset="{{this}}">
+                    <source media="(min-width: 62rem)" srcset="{{this}}">
+                    <source media="(min-width: 48rem)" srcset="{{this}}">
+                    <img class="header-slider__item__image-preview" src="{{this}}" alt="" />
+                </picture>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>

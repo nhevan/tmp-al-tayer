@@ -1,0 +1,97 @@
+﻿{
+    "items": [
+        {
+            "largeImage": "/assets/img/event-slide1.jpg",
+            "desktopImage": "/assets/img/event-slide1.jpg",
+            "tabletImage": "/assets/img/event-slide1.jpg",
+            "mobileImage": "/assets/img/event-slide1.jpg",
+            "videoWebm": "/assets/videos/niteco.webm",
+            "videoMp4": "/assets/videos/niteco.mp4",
+            "videoOgg": "/assets/videos/niteco.ogg"
+        },
+        {
+            "largeImage": "/assets/img/event-img2.jpg",
+            "desktopImage": "/assets/img/event-img2.jpg",
+            "tabletImage": "/assets/img/event-img2.jpg",
+            "mobileImage": "/assets/img/event-img2.jpg",
+            "videoWebm": "/assets/videos/niteco.webm",
+            "videoMp4": "/assets/videos/niteco.mp4",
+            "videoOgg": "/assets/videos/niteco.ogg"
+        },
+        {
+            "largeImage": "/assets/img/event-img3.jpg",
+            "desktopImage": "/assets/img/event-img3.jpg",
+            "tabletImage": "/assets/img/event-img3.jpg",
+            "mobileImage": "/assets/img/event-img3.jpg",
+            "videoWebm": "/assets/videos/niteco.webm",
+            "videoMp4": "/assets/videos/niteco.mp4",
+            "videoOgg": "/assets/videos/niteco.ogg"
+        },
+        {
+            "largeImage": "/assets/img/event-slide1.jpg",
+            "desktopImage": "/assets/img/event-slide1.jpg",
+            "tabletImage": "/assets/img/event-slide1.jpg",
+            "mobileImage": "/assets/img/event-slide1.jpg",
+            "videoWebm": "/assets/videos/niteco.webm",
+            "videoMp4": "/assets/videos/niteco.mp4",
+            "videoOgg": "/assets/videos/niteco.ogg"
+        },
+        {
+            "largeImage": "/assets/img/event-img2.jpg",
+            "desktopImage": "/assets/img/event-img2.jpg",
+            "tabletImage": "/assets/img/event-img2.jpg",
+            "mobileImage": "/assets/img/event-img2.jpg",
+            "videoWebm": "/assets/videos/niteco.webm",
+            "videoMp4": "/assets/videos/niteco.mp4",
+            "videoOgg": "/assets/videos/niteco.ogg"
+        },
+        {
+            "largeImage": "/assets/img/event-img3.jpg",
+            "desktopImage": "/assets/img/event-img3.jpg",
+            "tabletImage": "/assets/img/event-img3.jpg",
+            "mobileImage": "/assets/img/event-img3.jpg",
+            "videoWebm": "/assets/videos/niteco.webm",
+            "videoMp4": "/assets/videos/niteco.mp4",
+            "videoOgg": "/assets/videos/niteco.ogg"
+        },
+        {
+            "largeImage": "/assets/img/event-slide1.jpg",
+            "desktopImage": "/assets/img/event-slide1.jpg",
+            "tabletImage": "/assets/img/event-slide1.jpg",
+            "mobileImage": "/assets/img/event-slide1.jpg",
+            "videoWebm": "/assets/videos/niteco.webm",
+            "videoMp4": "/assets/videos/niteco.mp4",
+            "videoOgg": "/assets/videos/niteco.ogg"
+        },
+        {
+            "largeImage": "/assets/img/event-img2.jpg",
+            "desktopImage": "/assets/img/event-img2.jpg",
+            "tabletImage": "/assets/img/event-img2.jpg",
+            "mobileImage": "/assets/img/event-img2.jpg",
+            "videoWebm": "/assets/videos/niteco.webm",
+            "videoMp4": "/assets/videos/niteco.mp4",
+            "videoOgg": "/assets/videos/niteco.ogg"
+        },
+        {
+            "largeImage": "/assets/img/event-img3.jpg",
+            "desktopImage": "/assets/img/event-img3.jpg",
+            "tabletImage": "/assets/img/event-img3.jpg",
+            "mobileImage": "/assets/img/event-img3.jpg",
+            "videoWebm": "/assets/videos/niteco.webm",
+            "videoMp4": "/assets/videos/niteco.mp4",
+            "videoOgg": "/assets/videos/niteco.ogg"
+        }
+    ],
+
+    "thumbnails": [
+        "/assets/img/slider-thumbnail1.jpg",
+        "/assets/img/slider-thumbnail2.jpg",
+        "/assets/img/slider-thumbnail3.jpg",
+        "/assets/img/slider-thumbnail1.jpg",
+        "/assets/img/slider-thumbnail2.jpg",
+        "/assets/img/slider-thumbnail3.jpg",
+        "/assets/img/slider-thumbnail1.jpg",
+        "/assets/img/slider-thumbnail2.jpg",
+        "/assets/img/slider-thumbnail3.jpg"
+    ]
+}

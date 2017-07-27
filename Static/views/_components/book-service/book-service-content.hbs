@@ -1,0 +1,79 @@
+---
+title: "Book a Service"
+---
+
+<div class="container-fluid double-container-gutter book-page-top">
+    <div class="row double-row-gutter">
+        <div class="col-xs-12 double-column-gutter">
+            <h1>Book a Service</h1>
+            <p>
+                When you buy your car from us, our job is not complete. Our commitment is to give you all the support you need to help you get the most from owning your vehicle. To book your car for service please complete the form and our service advisor will contact you to agree on a convenient time.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid double-container-gutter book-page-form">
+    <form>
+        <div class="row double-row-gutter" data-require="base/modules/custom_select_wrapper">
+            <div class="col-xs-12 double-column-gutter">
+                <h3 class="header-form-group">
+                    <img src="/assets/img/icon_car.png" alt="" />
+                    Vehicle Information
+                </h3>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 double-column-gutter">
+                {{> select-item book-page.select_brand}}
+            </div>
+            <div class="col-xs-12 col-sm-6 double-column-gutter">
+                {{> select-item book-page.select_model}}
+            </div>
+            <div class="col-xs-12 col-sm-6 double-column-gutter">
+                {{> input-text-item book-page.registration_number}}
+            </div>
+            <div class="col-xs-12 col-sm-6 double-column-gutter">
+                {{> select-item book-page.select_model_year}}
+            </div>
+            <div class="col-xs-12 col-sm-6 double-column-gutter">
+                {{> input-text-item book-page.mileage}}
+            </div>
+            <div class="col-xs-12 col-sm-6 double-column-gutter">
+                {{> select-item book-page.select_branch}}
+            </div>
+
+            <div class="col-xs-12 double-column-gutter">
+                <h3 class="header-form-group">
+                    <img src="/assets/img/icon_personal.png" alt="" />
+                    Personal Information
+                </h3>
+            </div>
+            <div class="col-xs-12 col-sm-6 double-column-gutter">
+                {{> input-text-item book-page.first_name}}
+            </div>
+            <div class="col-xs-12 col-sm-6 double-column-gutter">
+                {{> input-text-item book-page.last_name}}
+            </div>
+            <div class="col-xs-12 col-sm-6 double-column-gutter">
+                {{> select-item book-page.select_city}}
+            </div>
+            <div class="col-xs-12 col-sm-6 double-column-gutter">
+                <div class="group-two-input">
+                    {{> select-item finance_insurance.select_phone}}
+                    {{> input-text-item finance_insurance.phone_input}}
+                </div>
+            </div>
+
+            <div class="col-xs-12 double-column-gutter">
+                <h3 class="header-form-group">
+                    <img src="/assets/img/icon_verification.png" alt="" />
+                    Verification Code
+                </h3>
+                <div class="g-recaptcha" data-sitekey="6LfKMhATAAAAABnDguv8544m_H8P1e-mhs8zGxde"></div>
+
+                <button class="button-common" type="Submit">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>

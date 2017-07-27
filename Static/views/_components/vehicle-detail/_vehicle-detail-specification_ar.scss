@@ -1,0 +1,14 @@
+.vehicle-specification-container {
+
+    .vehicle-specification-list-container {
+        .col-sm-6 {
+            @include rtl() {
+                @include respond-to-min($tabletSize) {
+                    &:nth-child(2n+1) {
+                        clear: right;
+                    }
+                }
+            }
+        }
+    }
+}

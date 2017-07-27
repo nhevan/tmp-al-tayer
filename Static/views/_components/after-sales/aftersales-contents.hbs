@@ -1,0 +1,91 @@
+---
+title: "After sales page"
+---
+<div class="brand-container brand-ford-container">
+    {{> brand-tabs brand-ford-tabs }}
+
+    <div id="brand_content_container">
+        <div>
+            <div class="container-fluid double-container-gutter aftersales-container">
+                <div class="row double-row-gutter">
+                    <div class="col-xs-12 col-lg-8 double-column-gutter">
+                        <div class="after-sales-main__container">
+                            <h3 class="after-sales-sub-title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse ut purus. Suspendisse tristique. Craset sem at odio porttitor mattis. Donec dignissim ornare tortor. Donec lectus turpis, tempor id, cursus vitae, eleifend in, risus. Aenean turpis. </h3>
+                            <p>Cras lectus. Sed imperdiet placerat est. Etiam accumsan felis eget ligula. Proin auctor, nibh sed volutpat pellentesque, tortor lectus condimentum felis, sit amet accumsan leo dui ut ligula. Pellentesque convallis. Duis dapibus neque sed lorem. Duis varius mauris vel augue. Aliquam a massa. Fusce dapibus mi. In hachabitasse platea dictumst. Duis lacus est, consequat ac, mollis eu, posuere vitae, velit. Proin faucibus lectus congue lacus. Phasellus auctor semper nibh. Ut ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                            <p>Suspendisse potenti. Donec faucibus. Nunc placerat justo et dolor lobortis aliquet. Vestibulum suscipit, nunc ut laoreet porttitor, massa nulla ultricies sem, Duis lacus est, consequat ac, mollis eu, posuere vitae, velit. Proin faucibus lectus congue lacus. Phasellus auctor semper nibh. Ut ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.ut blandit dolor justo ut lorem. Maecenas at lorem. Duis varius mauris vel augue. Aliquam a massa. Fusce dapibus mi. In hachabitasse platea dictumst. Duis lacus augue eget ante consectetuer tempor. Duis at magna id pede vestibulum accumsan. Suspendisse Duis lacus est, consequat ac, mollis eu, posuere vitae, velit. Proin faucibus lectus congue lacus. Phasellus auctor semper nibh. Ut ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.at massa. Proin eleifend. Vestibulum interdum. Mauris pellentesque. Vivamus mollis viverra elit. Aliquam vulputate nisl dapibus elit.</p>
+                            <ul class="department-lists" data-require="base/aftersales">
+                                {{#each aftersales-department-lists.items}}
+                                <li class="orange-top-border">
+                                    <a href="javascript:void(0)">{{department-name}} <i class="fa fa-angle-down">&nbsp;</i></a>
+                                    <ul class="services-list">
+                                        {{#each this.sevices-list}}
+                                        <li class="service-list-item">
+                                            <div class="service-thumbnail" style="background-image: url('{{service.thumbnail}}')">
+                                                <h2 class="service-title">
+                                                    <span>{{service.service-title}}</span>
+                                                    <span>{{service.service-price}}</span>
+                                                </h2>
+                                            </div>
+                                            <div class="sevice-descriptions">
+                                                <p>{{service.short-descriptions}}</p>
+                                            </div>
+                                        </li>
+                                        <li class="service-list-item">
+                                            <div class="service-thumbnail" style="background-image: url('{{service.thumbnail}}')">
+                                                <h2 class="service-title">
+                                                    <span>{{service.service-title}}</span>
+                                                    <span>{{service.service-price}}</span>
+                                                </h2>
+                                            </div>
+                                            <div class="sevice-descriptions">
+                                                <p>{{service.short-descriptions}}</p>
+                                            </div>
+                                        </li>
+                                        {{/each}}
+                                    </ul>
+                                </li>
+                                {{/each}}
+                            </ul>
+
+                            <h2 class="roadside-assistance">Roadside Assistance</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse ut purus. Suspendisse tristique. Cras et sem at odio porttitor mattis. Donec dignissim ornare tortor. Donec lectus turpis, tempor id, cursus vitae, eleifend in, risus. Aenean turpis. Mauris ultricies quam malesuada ligula. Vivamus neque. Maecenas arcu lacus, bibendum in, pretium ut, imperdiet a, augue.
+                                Cras lectus. Sed imperdiet placerat est. Etiam accumsan felis eget ligula. Proin auctor, nibh sed volutpat pellentesque, tortor lectus condimentum felis, sit amet accumsan leo dui ut ligula. Pellentesque convallis. Duis dapibus neque sed lorem. Duis varius mauris vel augue. Aliquam a massa. Fusce dapibus mi. In hac habitasse platea dictumst. Duis lacus est, consequat ac, mollis eu, posuere vitae, velit. Proin faucibus lectus congue lacus. Phasellus auctor semper nibh. Ut ligula. Class aptent taciti sociosqu ad litora torquent per
+                                conubia nostra, per inceptos himenaeos.
+                            </p>
+
+                            <div class="after-sale__contact-container">
+                                <img class="after-sale__logo" src="/assets/img/ford_logo.png" alt="" />
+                                <img class="after-sale__phone" src="/assets/img/infowindow_phone.png" alt="" />
+                                <span>+971 800668677</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-lg-4 double-column-gutter">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-lg-12">
+                                <div class="orange-top-border sidebar-block">
+                                    <img src="/assets/img/sidebar-block-img1.png" alt="" />
+                                    <div class="sidebar-block-contents">
+                                        <h3>Is your car in need of a service?</h3>
+                                        <h2 class="hotline">Call 800 mototors or</h2>
+                                        <a class="readmore" href="#" title=""><img src="/assets/img/bookservice-icon.png" alt=""/><span>book a service</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-lg-12">
+                                <div class="orange-top-border sidebar-block">
+                                    <img src="/assets/img/sidebar-block-img2.png" alt="" />
+                                    <div class="sidebar-block-contents">
+                                        <h3>Is your car in need of a service?</h3>
+                                        <a class="readmore" href="#" title=""><img src="/assets/img/videotour-icon.png" alt="" /><span>Video Tour</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

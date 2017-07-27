@@ -1,0 +1,50 @@
+
+.feature-item__column {
+    @include rtl() {
+        border-right: none;
+        border-left: rem(1px solid #e7e7eb);
+
+        &:nth-child(2n) {
+            border-left: none;
+        }
+
+        @include respond-to-min($tabletSize) {
+            &:nth-child(2n) {
+                border-right: none;
+                border-left: rem(1px solid #e7e7eb);
+            }
+
+            &:nth-child(3n) {
+                border-left: none;
+            }
+        }
+
+        @include respond-to-min($desktopSize) {
+            &:nth-child(3n) {
+                border-right: none;
+                border-left: rem(1px solid #e7e7eb);
+            }
+
+            &:last-child {
+                border-right: none;
+            }
+        }
+    }
+}
+
+.feature-item__container {
+    @include rtl() {
+        padding-left: 0;
+        padding-right: rem(20px);
+
+        @include respond-to-min($tabletSize) {
+            @include horizontal-center-rtl(relative);
+            padding-right: rem(0px);
+        }
+
+
+        img {
+            margin: rem(0 0 0 8px);
+        }
+    }
+}

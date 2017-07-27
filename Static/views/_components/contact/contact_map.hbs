@@ -1,0 +1,56 @@
+---
+title: "Contact Map"
+---
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsDnsIB-bRkzyL9Hs8kaENEvbCSPbzkuo&callback=mapReady">
+</script>
+
+<script>
+    window.mapIsReady = false;
+    function mapReady() {
+        window.mapIsReady = true;
+    }
+</script>
+<div class="container-fluid double-container-gutter contact-top-content" data-require="base/views/contact_map" data-service="/Static/data/location_data.json">
+    <div class="row double-row-gutter">
+        <div class="col-xs-12 double-column-gutter">
+            <h1>Contact Us</h1>
+            <p>
+                Get in touch with us text lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse ut purus. Suspendisse tristique. Cras et sem at odio porttitor mattis. Donec dignissim ornare tortor.
+            </p>
+
+            <div class="contact-map-container">
+                <div id="contact_map" class="contact-map">
+                </div>
+                <div class="contact-map-information">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-12">
+                            <h2>
+                                <img src="/assets/img/icon_our_location.png" alt="" />
+                                Our Location
+                            </h2>
+                            <p>
+                                Al Tayer Motors LLC<br />
+                                All Showroom timings: 8AM to 8PM<br />
+                                P.O. Box 7310<br />
+                                Dubai, U.A.E
+                            </p>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-12">
+                            <div class="container-contact-information">
+                                <a class="contact-infor__mail" href="mailto:info@altayermotors.com" title="">
+                                    <img src="/assets/img/icon_mailto.png" alt="" />
+                                    info@altayermotors.com
+                                </a>
+                                <a class="contact-infor__phone" href="tel:+971800668677" title="">
+                                    <img src="/assets/img/icon_tel.png" alt="" />
+                                    +971 800668677
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+---
+title: "Vehicle detail warranty block"
+---
+<div class="container-fluid double-container-gutter vehicle-detail-models-container">
+    <h2>MODELS</h2>
+    <div class="row double-row-gutter">
+        {{#each vehicle-detail-models.items}}
+        <div class="col-xs-12 col-sm-6 col-md-4 double-column-gutter">
+            <div class="vehicle-model-block orange-top-border">
+                <div class="thumbnail vehicle-warranty-thumbnail">
+                    <a href="#"><img src="{{thumbnail}}" alt="" /></a>
+                </div>
+                <div class="vehicle-model-short-description">
+                    <h4 class="vehicle-model-block-title">{{title}}</h4>
+                    <ul class="model-specifications">
+                        {{#each model-specifications}}
+                        <li>{{this}}</li>
+                        {{/each}}
+                    </ul>
+                    <h5 class="starting-at">Starting at <span class="price">{{starting-at}}</span></h5>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+    <div class="row double-row-gutter paginations-container">
+        <div class="col-xs-12 double-column-gutter">
+            {{> paginations}}
+        </div>
+    </div>
+</div>
