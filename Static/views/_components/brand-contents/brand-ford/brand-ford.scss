@@ -1,56 +1,270 @@
 .brand-ford-container {
-    .overview-content-block {
-        border-top: 5px solid $orangeBorder;
+    .brand-content-row {
+        &:first-child {
+            margin-top: 1rem;
+            margin-bottom: 0;
+        }
+        .thumbnail.idle {
+            img {
+                opacity: 0.3;
+                display: block;
+                margin: 0 auto;
+                width: auto;
+                max-width: 100%;
+                max-height: 30vh;
+            }
+        }
 
-        .block-overview {
-            position: absolute;
-            bottom: rem(18px);
-            left: rem(20px);
-            right: rem(20px);
-            z-index: 2;
+        .thumbnail.active {
+            img {
+                opacity: 1;
+                display: block;
+                margin: 0 auto;
+                width: auto;
+                max-width: 100%;
+                max-height: 40vh;
+            }
+        }
 
-            @include respond-to-min($tabletSize) {
-                bottom: rem(25px);
+        .label {
+            p {
+                margin-top: 0;
+                margin-bottom: 10px;
+                text-align: center;
+                color: #FD5204;
+                font-size: 1.4rem;
+            }
+        }
+
+        .no-right-padding {
+            padding-right: 0;
+        }
+
+        .btn-group {
+            display: flex;
+            align-items: flex-start;
+            .btn {
+                width: 13.5%;
+                margin: 5px;
+                background-color: #FD5204;
+                padding: 1rem;
+                color: white;
+                font-size: 13px;
+                text-align: center;
+                border-radius: 4px;
+                box-shadow: 0 0 5px #454545;
+                display: table;
+                align-items: center;
+                height: 6rem;
+                cursor: pointer;
             }
 
-            @include respond-to-min($desktopSize) {
+            a.btn {
+                span {
+                    width: 100%;
+                    text-align: center;
+                    display: table-cell;
+                    vertical-align: middle;
+                }
             }
+        }
 
-            @include respond-to-min($laptopSize) {
-                left: rem(30px);
-                right: rem(30px);
+    }
+    .second, .third {
+        display: none;
+    }
+
+    .second {
+        .btn {
+            background-color: #002D6A;
+        }
+    }
+
+    .third {
+        .btn {
+            background-color: #170B0D;
+        }
+    }
+
+    .brand-tabs-contents.tab-contents {
+        .text-contents-row {
+            p {
+                font-family: FrutigerNeueLTPro-Light;
+                font-weight: normal;
+                font-style: normal;
             }
+        }
+    }
 
-            h3 {
-                margin: 0;
-                &:nth-child(1) {
-                    color: $orangeBorder;
-                    @include latoBlack();
-                    font-size: rem(12px);
-                    line-height: rem(20px);
-                    text-transform: uppercase;
-                    text-decoration: none;
+    /*styles for modal*/
+
+    // Btn
+    .btn-close {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #eee;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        img {
+            max-width: 15px;
+            margin: 0 auto;
+        }
+        &:hover{
+            color: gray;
+        }
+    }
+
+
+    // Modal
+    .modal {
+        // This is modal bg
+        &:before{
+            content: "";
+            display: none;
+            background: rgba(0,0,0,.6);
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            z-index: 10;
+        }
+
+        &:target{
+            // Active animate in modal
+            &:before{
+                display: block;
+            }
+            .modal-dialog{
+                transform: translate(0, 0);
+                top: 50%;
+            }
+        }
+    }
+
+    // Modal Dialog
+    .modal-dialog {
+        background: #fefefe;
+        border-radius: 5px;
+        position: fixed;
+        left: 50%;
+        top: -200%;
+        z-index: 11;
+        width: 70%;
+        transform: translate(-50%, -50%) !important;
+        transition: 0.3s ease-out;
+    }
+
+    .modal-body{
+        padding: 20px;
+        max-height: 76vh;
+        min-height: 50vh;
+        overflow-y: auto;
+        margin-bottom: 10px;
+        .page {
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            .col-half{
+                width: 50%;
+                padding: 5px 15px;
+                img {
+                    max-width: 100%;
+                    display: block;
+                    margin: 35px auto 5px;
+                }
+                span {
+                    text-align: center;
+                    display: block;
+                    font-size: 13px;
+                }
+                p, ul, li {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    .modal-header,
+    .modal-footer{
+        padding: 5px 20px;
+    }
+
+    .modal-header{
+        h2{
+            display: inline-block;
+            position: relative;
+        }
+    }
+
+    .modal-footer{
+        border-top: #eeeeee solid 1px;
+        text-align: right;
+    }
+
+}
+
+
+
+@media (max-width: 900px) {
+    .desktop-only {
+        display: none;
+    }
+
+    .brand-maserati-container {
+        .brand-content-row {
+            .btn-group {
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                .btn {
+                    width: calc(100% - 10px);
+                    height: 5rem;
                 }
 
-                &:nth-child(2) {
-                    @include latoBold();
-                    color: #fff;
-                    text-decoration: none;
-                    text-transform: uppercase;
-                    margin: 0;
-                    font-size: rem(14px);
+                .btn-group {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
 
-                    @include respond-to-min($tabletSize) {
-                        font-size: rem(16px);
-                        line-height: rem(18px);
-                    }
+            }
 
-                    @include respond-to-min($largeSize){
-                        font-size: rem(18px);
-                        line-height: rem(20px);
+        }
+
+
+        /*styles for modal*/
+        // Btn
+        .btn-close {
+            width: 30px;
+            height: 30px;
+            right: 10px;
+            top: 5px;
+        }
+
+        // Modal Dialog
+        .modal-dialog {
+            width: 80%;
+        }
+
+        .modal-body{
+            .page {
+                flex-direction: column;
+                .col-half{
+                    width: 100%;
+                    img {
+                        margin: 5px auto;
                     }
                 }
             }
+        }
+
+        .modal-header,
+        .modal-footer{
+            padding:10px 10px 5px;
         }
     }
 }
