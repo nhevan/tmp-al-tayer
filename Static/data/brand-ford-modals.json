@@ -1,0 +1,276 @@
+{
+  "items": [
+    {
+      "id": "modal-one",
+      "title": "Scoop Kits",
+      "image": "/assets/img/ford/accessories/hood-scope-kit.jpg",
+      "imageCaption": "Hood Scoop Kit",
+      "cost": "Fitted Cost: 2,601.00 AED",
+      "details": "Personalize your Mustang and make it your own.",
+      "features": [
+        "Hood Scoop, Quarter Panel Scoops and Side Quarter Window Scoops now available",
+        "Pre-painted Satin Black and ready for installation",
+        "Can be painted to match ( Additional charges applicable)",
+        "Rugged polyurethane construction",
+        "Easy, no drill installation"
+      ]
+    },
+    {
+      "id": "modal-two",
+      "title": "Scoop Kits",
+      "image": "/assets/img/ford/accessories/quarter-panel-scoop-kit.jpg",
+      "imageCaption": "Scoops - Quarter Panel",
+      "cost": "Fitted Cost: 1,372.00 AED",
+      "details": "Developed specifically for the Mustang, these scoop kits add a personalized, custom appearance. The faux honeycomb grilles add to the muscular look.",
+      "features": [
+        "Pre-painted Satin Black and ready to install",
+        "Can be painted to match (Additional charges applicable)",
+        "Rugged polyurethane construction",
+        "Easy, no drill installation Mustang"
+      ]
+    },
+    {
+      "id": "modal-three",
+      "title": "Scoop Kits",
+      "image": "/assets/img/ford/accessories/quarter-window-scoop-kit.jpg",
+      "imageCaption": "Scoops - Quarter Window",
+      "cost": "Fitted Cost: 1,372.00 AED",
+      "details": "Developed specifically for the Mustang, these scoop kits add a personalized, custom appearance. The faux honeycomb grilles add to the muscular look.",
+      "features": [
+        "Pre-painted Satin Black and ready to install",
+        "Can be painted to match (Additional charges applicable)",
+        "Rugged polyurethane construction",
+        "Easy, no drill installation Mustang"
+      ]
+    },
+    {
+      "id": "modal-four",
+      "title": "Protection",
+      "image": "/assets/img/ford/accessories/floor-mats.jpg",
+      "imageCaption": "Floor Mats - All-Weather Thermoplastic Rubber, Black, 4-Piece Set",
+      "cost": "Fitted Cost: 472.00 AED",
+      "details": "The deep grooves and raised ridges in these heavy-duty mats catch and hold snow, slush and mud, while protecting the vehicle carpeting.",
+      "features": [
+        "Nibbed backing and driver-side positive retention help keep mats in place.",
+        "Dual Retention on driver and passenger side."
+      ]
+    },
+    {
+      "id": "modal-five",
+      "title": "Protection",
+      "image": "/assets/img/ford/accessories/cargo-area-without-subwoofer.jpg",
+      "imageCaption": "Cargo Area Protector - Without Subwoofer",
+      "cost": "Fitted Cost: 445.00 AED",
+      "details": "Protect the flooring in your cargo area with this rugged, stain-resistant polyethylene tray specifically shaped to the contours of your vehicle. A raised lip helps contain spills.",
+      "features": [
+        "Vehicle name molded into liner.",
+        "Black only.",
+        "Installs and removes easily without tools"
+      ]
+    },
+    {
+      "id": "modal-six",
+      "title": "Protection",
+      "image": "/assets/img/ford/accessories/cargo-area-with-subwoofer.jpg",
+      "imageCaption": "Cargo Area Protector - With Subwoofer",
+      "cost": "Fitted Cost: 441.00 AED",
+      "details": "Protect the flooring in your cargo area with this rugged, stain-resistant polyethylene tray specifically shaped to the contours of your vehicle. A raised lip helps contain spills.",
+      "features": [
+        "Vehicle name molded into liner.",
+        "Black only.",
+        "Installs and removes easily without tools"
+      ]
+    },
+    {
+      "id": "modal-seven",
+      "title": "Spoiler",
+      "image": "/assets/img/ford/accessories/spoiler-decklid-convertible.jpg",
+      "imageCaption": "Spoiler - Rear Decklid, Blade-Style, Convertible",
+      "cost": "Fitted Cost: 2,024.00 AED",
+      "details": "Add a subtle, sporty look to your Mustang with this blade style spoiler designed specifically for your car.",
+      "features": [
+        "Constructed of tough, lightweight, impact-resistant ABS plastic.",
+        "Comes primed and ready to paint. Dimensions – approximately 52\" long, 8.3\" wide, 2\" high.",
+        "Includes mounting hardware, installation instructions and template.",
+        "Dealer installation recommended."
+      ]
+    },
+    {
+      "id": "modal-eight",
+      "title": "Spoiler",
+      "image": "/assets/img/ford/accessories/spoiler-decklid-coupe.jpg",
+      "imageCaption": "Spoiler - Rear Decklid, Blade Style, Coupe",
+      "cost": "Fitted Cost: 2,024.00 AED",
+      "details": "This sharp spoiler adds a subtle edge of differentiation to the standout silhouette of your Mustang.",
+      "features": [
+        "Constructed of a rigid, lightweight PC (polycarbonate) and ABS (acrylonitrile butadiene styrene) plastic blend Color – primed; ready to paint.",
+        "Dimensions – approximately 52\" long, 8.5\" wide, 1.6\" high.",
+        "Includes mounting hardware, instructions and drill template (or utilizes existing factory decklid holes); 2-sided tape is for one-time use.",
+        "Dealer installation recommended."
+      ]
+    },
+    {
+      "id": "modal-nine",
+      "title": "Spoiler",
+      "image": "/assets/img/ford/accessories/spoiler-decklid-black.jpg",
+      "imageCaption": "Spoiler - Shelby GT350 Track Pack, Absolute Black",
+      "cost": "Fitted Cost: 4,279.00 AED",
+      "details": "Not only is this raised spoiler stunning, it's an authentic piece of one of the most iconic, adrenaline-pumping Mustang nameplates of all time. Even upon it's debut in 1965, the legendary GT350 spit out more than 300 horses through its cobra V8 muscle. Now's the time to make your sporting street machine a touch meaner.",
+      "features": [
+        "Finished in Absolute Black Clearacoat",
+        "Includes spoiler, plus mounting hardware and drill template (or utilizes existing factory decklid holes).",
+        "Dealer Installation recommended."
+      ]
+    },
+    {
+      "id": "modal-ten",
+      "title": "Spoiler",
+      "image": "/assets/img/ford/accessories/spoiler-rear-coupe.jpg",
+      "imageCaption": "ROUSH Rear Spoiler (Coupe Only)",
+      "cost": "Fitted Cost: 2,683.00 AED",
+      "details": "This race-inspired rear wing from ROUSH is notched out for maximum rear visibility .",
+      "features": [
+        "Race-inspired.",
+        "Made from lightweight ABS (acrylonitrile butadiene styrene) for superior appearance, durability, and heat and impact resistance.",
+        "Designed with OEM CAD data to ensure precise fitment.",
+        "Available unpainted.",
+        "Templates, hardware, high-quality adhesive tape included"
+      ]
+    },
+    {
+      "id": "modal-eleven",
+      "title": "Supercharger",
+      "image": "/assets/img/ford/accessories/supercharger.jpg",
+      "imageCaption": "Supercharger – Phase- 1 ( 670 HP )",
+      "cost": "Fitted Cost: 49,773.00 AED",
+      "details": "",
+      "features": [
+        "Fits 2015-2016 Mustang GT 5.0L V8",
+        "Not applicable to vehicles with adaptive cruise control.",
+        "Compatible with both manual and automatic transmissions."
+      ]
+    },
+    {
+      "id": "modal-twelve",
+      "title": "Supercharger",
+      "image": "/assets/img/ford/accessories/supercharger.jpg",
+      "imageCaption": "Supercharger – Phase- 2 ( 727 HP )",
+      "cost": "Fitted Cost: 53,535.00 AED",
+      "details": "",
+      "features": [
+        "Fits 2015-2016 Mustang GT 5.0L V8",
+        "Not applicable to vehicles with adaptive cruise control.",
+        "Compatible with both manual and automatic transmissions."
+      ]
+    },
+    {
+      "id": "modal-thirteen",
+      "title": "Exhaust Kit",
+      "image": "/assets/img/ford/accessories/exhaust-kit-round.jpg",
+      "imageCaption": "Exhaust Kit - Round Tip (304SS)",
+      "cost": "Fitted Cost: 4,435.00 AED",
+      "details": "",
+      "features": [
+        "All new for 2015-2017 V8 Mustangs",
+        "ROUSH designed Single tip high-flow mufflers",
+        "Corrosion resistant 304 stainless steel",
+        "Full mandrel bending",
+        "4\" Flash-chromed dual wall tips",
+        "Uses OEM hangers and mounting points",
+        "No welding required",
+        "Some cutting required"
+      ]
+    },
+    {
+      "id": "modal-fourteen",
+      "title": "Exhaust Kit",
+      "image": "/assets/img/ford/accessories/v-8-cold-air-kit.jpg",
+      "imageCaption": "V8 Cold Air Kit",
+      "cost": "Fitted Cost: 3,058.00 AED",
+      "details": "",
+      "features": [
+        "No Calibration required (85mm MAF insert)",
+        "Will not void warranty (85mm MAF insert)",
+        "Improved throttle response",
+        "Features ROUSH Logo",
+        "Increased performance by 10.4 HP and 8.54 ft-lbs torque (85mm MAF insert)",
+        "Less intake restriction than stock intake",
+        "Easy installation (no drilling or cutting required)",
+        "Reusable Oil-free air filter",
+        "Superior filtration properties"
+      ]
+    },
+    {
+      "id": "modal-fifteen",
+      "title": "Exhaust Kit",
+      "image": "/assets/img/ford/accessories/quad-tip-active-ready.jpg",
+      "imageCaption": "Quad Tip (Active Ready)",
+      "cost": "Fitted Cost: 9,188.00 AED",
+      "details": "",
+      "features": [
+        "Dual Tip Mufflers",
+        "Compatible with ROUSH Active exhaust Module (Part# 421926)",
+        "4\" Chrome flashed tips",
+        "Corrosion resistant 304 stainless steel",
+        "Requires ROUSH rear valance 421894 (w/o back up sensors) or",
+        "421919 (with back up sensors)."
+      ]
+    },
+    {
+      "id": "modal-sixteen",
+      "title": "Exhaust Kit",
+      "image": "/assets/img/ford/accessories/rear-valance-with-sensor.jpg",
+      "imageCaption": "Rear Valance Kit - with Back-up Sensor",
+      "cost": "Fitted Cost: 2,945.00 AED",
+      "details": "",
+      "features": [
+        "Pre-prepped for Back-up sensor installation.",
+        "Specifically designed for ROUSH Quad Tip Exhausts",
+        "Made from high-strength TPO (thermal plastic olefin) for long lasting durability",
+        "Shaped with high-pressure injection molding, the same process that the OEMs use.",
+        "Designed around original manufacturer CAD data for optimum quality and fit.",
+        "Comes unpainted with grain texture 90.",
+        "Day ROUSH Limited Parts Warranty.",
+        "Made in the U.S.A.",
+        "Fits Mustangs with Premium Chassis Packages only"
+      ]
+    },
+    {
+      "id": "modal-seventeen",
+      "title": "Exhaust Kit",
+      "image": "/assets/img/ford/accessories/rear-valance-without-sensor.jpg",
+      "imageCaption": "Rear Valance Kit-without Back-up Sensor",
+      "cost": "Fitted Cost: 2,532.00 AED",
+      "details": "",
+      "features": [
+        "Specifically designed for ROUSH Quad Tip Exhausts",
+        "Made from high-strength TPO (thermal plastic olefin) for long lasting durability.",
+        "Shaped with high-pressure injection molding, the same process that the OEMs use.",
+        "Designed around original manufacturer CAD data for optimum quality and fit.",
+        "Comes unpainted with grain texture 90.",
+        "Day ROUSH Limited Parts Warranty.",
+        "Made in the U.S.A.",
+        "Fits Mustangs with Premium Chassis Packages only"
+      ]
+    },
+    {
+      "id": "modal-eighteen",
+      "title": "Exhaust Kit",
+      "image": "/assets/img/ford/accessories/v-8-cold-air-kit.jpg",
+      "imageCaption": "V8 Cold Air Kit",
+      "cost": "Fitted Cost: 3,058.00 AED",
+      "details": "",
+      "features": [
+        "No Calibration required (85mm MAF insert)",
+        "Will not void warranty (85mm MAF insert)",
+        "Improved throttle response",
+        "Features ROUSH Logo",
+        "Increased performance by 10.4 HP and 8.54 ft-lbs torque (85mm MAF insert)",
+        "Less intake restriction than stock intake",
+        "Easy installation (no drilling or cutting required)",
+        "Reusable Oil-free air filter",
+        "Superior filtration properties"
+      ]
+    }
+  ]
+}

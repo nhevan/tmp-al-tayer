@@ -1,0 +1,29 @@
+{{#each this.items}}
+    <div class="modal" id="{{id}}" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h2>{{title}}</h2>
+                <a class="btn-close" aria-hidden="true">
+                    <img src="/assets/img/close-icon-modal.png" alt="close-icon-modal">
+                </a>
+            </div>
+            <div class="modal-body">
+                <div class="page">
+                    <div class="col-half">
+                        <img src="{{image}}" alt="car-image">
+                        <span>{{imageCaption}}</span>
+                    </div>
+                    <div class="col-half">
+                        <h4>{{cost}}</h4>
+                        <p>{{details}}</p>
+                        <ul>
+                            {{#each this.features}}
+                                <li>{{ this }}</li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{{/each}}
